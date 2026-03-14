@@ -142,7 +142,15 @@ export function DetailHraca() {
 
                 <div className="bg-gray-50 rounded-lg p-4 text-center">
                   <div className="flex items-center justify-center h-8 mb-2">
-                    <div className="w-5 h-7 bg-[#ffd700] rounded-sm border-2 border-[#e6b800] shadow-[3px_3px_0_rgba(204,184,0,0.3)] transform -rotate-12 transition-transform hover:scale-110"></div>
+                    <div 
+                      className="rounded-sm border shadow-[2px_2px_0_rgba(0,0,0,0.1)] transform -rotate-12 transition-transform hover:scale-110"
+                      style={{ 
+                        width: '20px', 
+                        height: '28px', 
+                        backgroundColor: '#ffd700', 
+                        borderColor: '#e6b800' 
+                      }}
+                    ></div>
                   </div>
                   <div className="text-3xl font-bold text-yellow-600">
                     {player.yellowCards}
@@ -152,7 +160,15 @@ export function DetailHraca() {
 
                 <div className="bg-gray-50 rounded-lg p-4 text-center">
                   <div className="flex items-center justify-center h-8 mb-2">
-                    <div className="w-5 h-7 bg-[#ff4d4d] rounded-sm border-2 border-[#cc0000] shadow-[3px_3px_0_rgba(204,0,0,0.3)] transform rotate-12 transition-transform hover:scale-110"></div>
+                    <div 
+                      className="rounded-sm border shadow-[2px_2px_0_rgba(0,0,0,0.1)] transform rotate-12 transition-transform hover:scale-110"
+                      style={{ 
+                        width: '20px', 
+                        height: '28px', 
+                        backgroundColor: '#ff4d4d', 
+                        borderColor: '#cc0000' 
+                      }}
+                    ></div>
                   </div>
                   <div className="text-3xl font-bold text-red-600">
                     {player.redCards}
