@@ -80,7 +80,6 @@ export const players: Player[] = [
     "jerseyNumber": 54,
     "position": "Brankár",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -90,6 +89,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "4",
@@ -98,7 +99,6 @@ export const players: Player[] = [
     "jerseyNumber": 37,
     "position": "Obranca",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -108,6 +108,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "5",
@@ -116,7 +118,6 @@ export const players: Player[] = [
     "jerseyNumber": 54,
     "position": "Obranca",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -126,6 +127,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "6",
@@ -134,7 +137,6 @@ export const players: Player[] = [
     "jerseyNumber": 25,
     "position": "Obranca",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -144,6 +146,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "7",
@@ -152,7 +156,6 @@ export const players: Player[] = [
     "jerseyNumber": 78,
     "position": "Obranca",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -162,6 +165,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "8",
@@ -170,7 +175,6 @@ export const players: Player[] = [
     "jerseyNumber": 49,
     "position": "Obranca",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -180,6 +184,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "9",
@@ -188,7 +194,6 @@ export const players: Player[] = [
     "jerseyNumber": 48,
     "position": "Obranca",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -198,6 +203,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "10",
@@ -206,7 +213,6 @@ export const players: Player[] = [
     "jerseyNumber": 95,
     "position": "Stredný záložník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -216,6 +222,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "11",
@@ -224,7 +232,6 @@ export const players: Player[] = [
     "jerseyNumber": 20,
     "position": "Stredný záložník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -234,6 +241,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "12",
@@ -242,7 +251,6 @@ export const players: Player[] = [
     "jerseyNumber": 49,
     "position": "Stredný záložník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -252,6 +260,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "13",
@@ -260,7 +270,6 @@ export const players: Player[] = [
     "jerseyNumber": 74,
     "position": "Stredný záložník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -270,6 +279,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "14",
@@ -278,7 +289,6 @@ export const players: Player[] = [
     "jerseyNumber": 61,
     "position": "Stredný záložník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -288,6 +298,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "15",
@@ -296,7 +308,6 @@ export const players: Player[] = [
     "jerseyNumber": 55,
     "position": "Stredný záložník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -306,6 +317,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "16",
@@ -314,7 +327,6 @@ export const players: Player[] = [
     "jerseyNumber": 63,
     "position": "Stredný záložník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -324,6 +336,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "17",
@@ -332,7 +346,6 @@ export const players: Player[] = [
     "jerseyNumber": 20,
     "position": "Útočník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -342,6 +355,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "18",
@@ -350,7 +365,6 @@ export const players: Player[] = [
     "jerseyNumber": 82,
     "position": "Útočník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -360,6 +374,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "19",
@@ -368,7 +384,6 @@ export const players: Player[] = [
     "jerseyNumber": 96,
     "position": "Útočník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -378,6 +393,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "20",
@@ -386,7 +403,6 @@ export const players: Player[] = [
     "jerseyNumber": 55,
     "position": "Útočník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -396,6 +412,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "21",
@@ -404,7 +422,6 @@ export const players: Player[] = [
     "jerseyNumber": 18,
     "position": "Útočník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -414,6 +431,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "22",
@@ -422,7 +441,6 @@ export const players: Player[] = [
     "jerseyNumber": 27,
     "position": "Útočník",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -432,6 +450,8 @@ export const players: Player[] = [
     "yellowCards": 17,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2014,
+    "age": 12,
   },
   {
     "id": "23",
@@ -440,7 +460,6 @@ export const players: Player[] = [
     "jerseyNumber": 39,
     "position": "Brankár",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -450,6 +469,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "24",
@@ -458,7 +479,6 @@ export const players: Player[] = [
     "jerseyNumber": 36,
     "position": "Brankár",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -468,6 +488,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "25",
@@ -476,7 +498,6 @@ export const players: Player[] = [
     "jerseyNumber": 80,
     "position": "Obranca",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -486,6 +507,8 @@ export const players: Player[] = [
     "yellowCards": 2,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "26",
@@ -494,7 +517,6 @@ export const players: Player[] = [
     "jerseyNumber": 54,
     "position": "Obranca",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -504,6 +526,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "27",
@@ -512,7 +536,6 @@ export const players: Player[] = [
     "jerseyNumber": 7,
     "position": "Obranca",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -522,6 +545,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "28",
@@ -530,7 +555,6 @@ export const players: Player[] = [
     "jerseyNumber": 1,
     "position": "Stredný záložník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -540,6 +564,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "29",
@@ -548,7 +574,6 @@ export const players: Player[] = [
     "jerseyNumber": 17,
     "position": "Stredný záložník",
     "category": "U15",
-    "dateOfBirth": "2018-11-21",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -558,6 +583,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "30",
@@ -566,7 +593,6 @@ export const players: Player[] = [
     "jerseyNumber": 47,
     "position": "Stredný záložník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -576,6 +602,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "31",
@@ -584,7 +612,6 @@ export const players: Player[] = [
     "jerseyNumber": 24,
     "position": "Stredný záložník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -594,6 +621,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "32",
@@ -602,7 +631,6 @@ export const players: Player[] = [
     "jerseyNumber": 49,
     "position": "Stredný záložník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -612,6 +640,8 @@ export const players: Player[] = [
     "yellowCards": 3,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "33",
@@ -620,7 +650,6 @@ export const players: Player[] = [
     "jerseyNumber": 21,
     "position": "Stredný záložník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -630,6 +659,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "34",
@@ -638,7 +669,6 @@ export const players: Player[] = [
     "jerseyNumber": 90,
     "position": "Stredný záložník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -648,6 +678,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "35",
@@ -656,7 +688,6 @@ export const players: Player[] = [
     "jerseyNumber": 79,
     "position": "Stredný záložník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -666,6 +697,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "36",
@@ -674,7 +707,6 @@ export const players: Player[] = [
     "jerseyNumber": 23,
     "position": "Stredný záložník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -684,6 +716,8 @@ export const players: Player[] = [
     "yellowCards": 2,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "37",
@@ -692,7 +726,6 @@ export const players: Player[] = [
     "jerseyNumber": 63,
     "position": "Útočník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -702,6 +735,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "38",
@@ -710,7 +745,6 @@ export const players: Player[] = [
     "jerseyNumber": 89,
     "position": "Útočník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -720,6 +754,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "39",
@@ -728,7 +764,6 @@ export const players: Player[] = [
     "jerseyNumber": 12,
     "position": "Útočník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -738,6 +773,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "40",
@@ -746,7 +783,6 @@ export const players: Player[] = [
     "jerseyNumber": 24,
     "position": "Útočník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -756,6 +792,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "41",
@@ -764,7 +802,6 @@ export const players: Player[] = [
     "jerseyNumber": 66,
     "position": "Útočník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -774,6 +811,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "42",
@@ -782,7 +821,6 @@ export const players: Player[] = [
     "jerseyNumber": 54,
     "position": "Útočník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -792,6 +830,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "43",
@@ -800,7 +840,6 @@ export const players: Player[] = [
     "jerseyNumber": 2,
     "position": "Útočník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -810,6 +849,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "44",
@@ -818,7 +859,6 @@ export const players: Player[] = [
     "jerseyNumber": 83,
     "position": "Útočník",
     "category": "U15",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U15 hráč.",
@@ -828,6 +868,8 @@ export const players: Player[] = [
     "yellowCards": 5,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2012,
+    "age": 14,
   },
   {
     "id": "46",
@@ -836,7 +878,6 @@ export const players: Player[] = [
     "jerseyNumber": 82,
     "position": "Brankár",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -846,6 +887,8 @@ export const players: Player[] = [
     "yellowCards": 6,
     "redCards": 2,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "47",
@@ -854,7 +897,6 @@ export const players: Player[] = [
     "jerseyNumber": 86,
     "position": "Brankár",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -864,6 +906,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "48",
@@ -872,7 +916,6 @@ export const players: Player[] = [
     "jerseyNumber": 92,
     "position": "Obranca",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -882,6 +925,8 @@ export const players: Player[] = [
     "yellowCards": 4,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "49",
@@ -890,7 +935,6 @@ export const players: Player[] = [
     "jerseyNumber": 70,
     "position": "Obranca",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -900,6 +944,8 @@ export const players: Player[] = [
     "yellowCards": 13,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "50",
@@ -908,7 +954,6 @@ export const players: Player[] = [
     "jerseyNumber": 83,
     "position": "Obranca",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -918,6 +963,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "51",
@@ -926,7 +973,6 @@ export const players: Player[] = [
     "jerseyNumber": 23,
     "position": "Obranca",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -936,6 +982,8 @@ export const players: Player[] = [
     "yellowCards": 12,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "52",
@@ -944,7 +992,6 @@ export const players: Player[] = [
     "jerseyNumber": 24,
     "position": "Obranca",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -954,6 +1001,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "53",
@@ -962,7 +1011,6 @@ export const players: Player[] = [
     "jerseyNumber": 26,
     "position": "Obranca",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -972,6 +1020,8 @@ export const players: Player[] = [
     "yellowCards": 4,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "54",
@@ -980,7 +1030,6 @@ export const players: Player[] = [
     "jerseyNumber": 29,
     "position": "Obranca",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -990,6 +1039,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "56",
@@ -998,7 +1049,6 @@ export const players: Player[] = [
     "jerseyNumber": 1,
     "position": "Stredný záložník",
     "category": "U17",
-    "dateOfBirth": "2017-10-10",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1008,6 +1058,8 @@ export const players: Player[] = [
     "yellowCards": 2,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "57",
@@ -1016,7 +1068,6 @@ export const players: Player[] = [
     "jerseyNumber": 51,
     "position": "Stredný záložník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1026,6 +1077,8 @@ export const players: Player[] = [
     "yellowCards": 7,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "58",
@@ -1034,7 +1087,6 @@ export const players: Player[] = [
     "jerseyNumber": 21,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1044,6 +1096,8 @@ export const players: Player[] = [
     "yellowCards": 7,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "59",
@@ -1052,7 +1106,6 @@ export const players: Player[] = [
     "jerseyNumber": 64,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1062,6 +1115,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "60",
@@ -1070,7 +1125,6 @@ export const players: Player[] = [
     "jerseyNumber": 45,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1080,6 +1134,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "61",
@@ -1088,7 +1144,6 @@ export const players: Player[] = [
     "jerseyNumber": 38,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1098,6 +1153,8 @@ export const players: Player[] = [
     "yellowCards": 7,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "62",
@@ -1106,7 +1163,6 @@ export const players: Player[] = [
     "jerseyNumber": 34,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1116,6 +1172,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "63",
@@ -1124,7 +1182,6 @@ export const players: Player[] = [
     "jerseyNumber": 80,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1134,6 +1191,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "64",
@@ -1142,7 +1201,6 @@ export const players: Player[] = [
     "jerseyNumber": 12,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1152,6 +1210,8 @@ export const players: Player[] = [
     "yellowCards": 2,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "65",
@@ -1160,7 +1220,6 @@ export const players: Player[] = [
     "jerseyNumber": 18,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1170,6 +1229,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "66",
@@ -1178,7 +1239,6 @@ export const players: Player[] = [
     "jerseyNumber": 58,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1188,6 +1248,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "67",
@@ -1196,7 +1258,6 @@ export const players: Player[] = [
     "jerseyNumber": 48,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1206,6 +1267,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "68",
@@ -1214,7 +1277,6 @@ export const players: Player[] = [
     "jerseyNumber": 84,
     "position": "Útočník",
     "category": "U17",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U17 hráč.",
@@ -1224,6 +1286,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2010,
+    "age": 16,
   },
   {
     "id": "69",
@@ -1232,7 +1296,6 @@ export const players: Player[] = [
     "jerseyNumber": 69,
     "position": "Brankár",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1242,6 +1305,8 @@ export const players: Player[] = [
     "yellowCards": 13,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "71",
@@ -1250,7 +1315,6 @@ export const players: Player[] = [
     "jerseyNumber": 56,
     "position": "Obranca",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1260,6 +1324,8 @@ export const players: Player[] = [
     "yellowCards": 15,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "72",
@@ -1268,7 +1334,6 @@ export const players: Player[] = [
     "jerseyNumber": 77,
     "position": "Obranca",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1278,6 +1343,8 @@ export const players: Player[] = [
     "yellowCards": 6,
     "redCards": 2,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "73",
@@ -1286,7 +1353,6 @@ export const players: Player[] = [
     "jerseyNumber": 82,
     "position": "Obranca",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1296,6 +1362,8 @@ export const players: Player[] = [
     "yellowCards": 15,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "74",
@@ -1304,7 +1372,6 @@ export const players: Player[] = [
     "jerseyNumber": 75,
     "position": "Obranca",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1314,6 +1381,8 @@ export const players: Player[] = [
     "yellowCards": 14,
     "redCards": 2,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "75",
@@ -1322,7 +1391,6 @@ export const players: Player[] = [
     "jerseyNumber": 72,
     "position": "Obranca",
     "category": "U19",
-    "dateOfBirth": "2016-10-24",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1332,6 +1400,8 @@ export const players: Player[] = [
     "yellowCards": 24,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "76",
@@ -1340,7 +1410,6 @@ export const players: Player[] = [
     "jerseyNumber": 73,
     "position": "Obranca",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1350,6 +1419,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "77",
@@ -1358,7 +1429,6 @@ export const players: Player[] = [
     "jerseyNumber": 31,
     "position": "Stredný záložník",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1368,6 +1438,8 @@ export const players: Player[] = [
     "yellowCards": 5,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "78",
@@ -1376,7 +1448,6 @@ export const players: Player[] = [
     "jerseyNumber": 12,
     "position": "Stredný záložník",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1386,6 +1457,8 @@ export const players: Player[] = [
     "yellowCards": 4,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "79",
@@ -1394,7 +1467,6 @@ export const players: Player[] = [
     "jerseyNumber": 46,
     "position": "Stredný záložník",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1404,6 +1476,8 @@ export const players: Player[] = [
     "yellowCards": 8,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "80",
@@ -1412,7 +1486,6 @@ export const players: Player[] = [
     "jerseyNumber": 90,
     "position": "Stredný záložník",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1422,6 +1495,8 @@ export const players: Player[] = [
     "yellowCards": 17,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "81",
@@ -1430,7 +1505,6 @@ export const players: Player[] = [
     "jerseyNumber": 66,
     "position": "Útočník",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1440,6 +1514,8 @@ export const players: Player[] = [
     "yellowCards": 6,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "82",
@@ -1448,7 +1524,6 @@ export const players: Player[] = [
     "jerseyNumber": 51,
     "position": "Útočník",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1458,6 +1533,8 @@ export const players: Player[] = [
     "yellowCards": 20,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "83",
@@ -1466,7 +1543,6 @@ export const players: Player[] = [
     "jerseyNumber": 15,
     "position": "Útočník",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1476,6 +1552,8 @@ export const players: Player[] = [
     "yellowCards": 5,
     "redCards": 0,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "84",
@@ -1484,7 +1562,6 @@ export const players: Player[] = [
     "jerseyNumber": 32,
     "position": "Útočník",
     "category": "U19",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U19 hráč.",
@@ -1494,6 +1571,8 @@ export const players: Player[] = [
     "yellowCards": 11,
     "redCards": 1,
     "isActive": true
+    "birthYear": 2008,
+    "age": 18,
   },
   {
     "id": "89",
@@ -1502,7 +1581,6 @@ export const players: Player[] = [
     "jerseyNumber": 44,
     "position": "Brankár",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1512,6 +1590,8 @@ export const players: Player[] = [
     "yellowCards": 9,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "90",
@@ -1520,7 +1600,6 @@ export const players: Player[] = [
     "jerseyNumber": 70,
     "position": "Brankár",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1530,6 +1609,8 @@ export const players: Player[] = [
     "yellowCards": 2,
     "redCards": 2,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "91",
@@ -1538,7 +1619,6 @@ export const players: Player[] = [
     "jerseyNumber": 9,
     "position": "Brankár",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1548,6 +1628,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "92",
@@ -1556,7 +1638,6 @@ export const players: Player[] = [
     "jerseyNumber": 8,
     "position": "Obranca",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1566,6 +1647,8 @@ export const players: Player[] = [
     "yellowCards": 54,
     "redCards": 1,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "93",
@@ -1574,7 +1657,6 @@ export const players: Player[] = [
     "jerseyNumber": 94,
     "position": "Obranca",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1584,6 +1666,8 @@ export const players: Player[] = [
     "yellowCards": 34,
     "redCards": 3,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "94",
@@ -1592,7 +1676,6 @@ export const players: Player[] = [
     "jerseyNumber": 4,
     "position": "Obranca",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1602,6 +1685,8 @@ export const players: Player[] = [
     "yellowCards": 7,
     "redCards": 1,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "95",
@@ -1610,7 +1695,6 @@ export const players: Player[] = [
     "jerseyNumber": 29,
     "position": "Obranca",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1620,6 +1704,8 @@ export const players: Player[] = [
     "yellowCards": 2,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "96",
@@ -1628,7 +1714,6 @@ export const players: Player[] = [
     "jerseyNumber": 48,
     "position": "Obranca",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1638,6 +1723,8 @@ export const players: Player[] = [
     "yellowCards": 20,
     "redCards": 1,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "97",
@@ -1646,7 +1733,6 @@ export const players: Player[] = [
     "jerseyNumber": 83,
     "position": "Obranca",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1656,6 +1742,8 @@ export const players: Player[] = [
     "yellowCards": 5,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "98",
@@ -1664,7 +1752,6 @@ export const players: Player[] = [
     "jerseyNumber": 86,
     "position": "Obranca",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1674,6 +1761,8 @@ export const players: Player[] = [
     "yellowCards": 10,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "99",
@@ -1682,7 +1771,6 @@ export const players: Player[] = [
     "jerseyNumber": 99,
     "position": "Obranca",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1692,6 +1780,8 @@ export const players: Player[] = [
     "yellowCards": 46,
     "redCards": 3,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "100",
@@ -1700,7 +1790,6 @@ export const players: Player[] = [
     "jerseyNumber": 96,
     "position": "Obranca",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1710,6 +1799,8 @@ export const players: Player[] = [
     "yellowCards": 6,
     "redCards": 1,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "102",
@@ -1718,7 +1809,6 @@ export const players: Player[] = [
     "jerseyNumber": 89,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1728,6 +1818,8 @@ export const players: Player[] = [
     "yellowCards": 41,
     "redCards": 5,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "103",
@@ -1736,7 +1828,6 @@ export const players: Player[] = [
     "jerseyNumber": 6,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1746,6 +1837,8 @@ export const players: Player[] = [
     "yellowCards": 14,
     "redCards": 2,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "104",
@@ -1754,7 +1847,6 @@ export const players: Player[] = [
     "jerseyNumber": 82,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1764,6 +1856,8 @@ export const players: Player[] = [
     "yellowCards": 40,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "105",
@@ -1772,7 +1866,6 @@ export const players: Player[] = [
     "jerseyNumber": 79,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1782,6 +1875,8 @@ export const players: Player[] = [
     "yellowCards": 20,
     "redCards": 2,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "106",
@@ -1790,7 +1885,6 @@ export const players: Player[] = [
     "jerseyNumber": 35,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1800,6 +1894,8 @@ export const players: Player[] = [
     "yellowCards": 47,
     "redCards": 2,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "107",
@@ -1808,7 +1904,6 @@ export const players: Player[] = [
     "jerseyNumber": 69,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1818,6 +1913,8 @@ export const players: Player[] = [
     "yellowCards": 8,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "109",
@@ -1826,7 +1923,6 @@ export const players: Player[] = [
     "jerseyNumber": 31,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1836,6 +1932,8 @@ export const players: Player[] = [
     "yellowCards": 12,
     "redCards": 1,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "110",
@@ -1844,7 +1942,6 @@ export const players: Player[] = [
     "jerseyNumber": 70,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1854,6 +1951,8 @@ export const players: Player[] = [
     "yellowCards": 28,
     "redCards": 1,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "111",
@@ -1862,7 +1961,6 @@ export const players: Player[] = [
     "jerseyNumber": 25,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1872,6 +1970,8 @@ export const players: Player[] = [
     "yellowCards": 21,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "112",
@@ -1880,7 +1980,6 @@ export const players: Player[] = [
     "jerseyNumber": 15,
     "position": "Stredný záložník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1890,6 +1989,8 @@ export const players: Player[] = [
     "yellowCards": 5,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "113",
@@ -1898,7 +1999,6 @@ export const players: Player[] = [
     "jerseyNumber": 51,
     "position": "Útočník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1908,6 +2008,8 @@ export const players: Player[] = [
     "yellowCards": 31,
     "redCards": 5,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "114",
@@ -1916,7 +2018,6 @@ export const players: Player[] = [
     "jerseyNumber": 81,
     "position": "Útočník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1926,6 +2027,8 @@ export const players: Player[] = [
     "yellowCards": 38,
     "redCards": 2,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "115",
@@ -1934,7 +2037,6 @@ export const players: Player[] = [
     "jerseyNumber": 35,
     "position": "Útočník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1944,6 +2046,8 @@ export const players: Player[] = [
     "yellowCards": 1,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "116",
@@ -1952,7 +2056,6 @@ export const players: Player[] = [
     "jerseyNumber": 79,
     "position": "Útočník",
     "category": "A tím",
-    "dateOfBirth": "2020-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1962,6 +2065,8 @@ export const players: Player[] = [
     "yellowCards": 4,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   },
   {
     "id": "117",
@@ -1970,7 +2075,6 @@ export const players: Player[] = [
     "jerseyNumber": 96,
     "position": "Útočník",
     "category": "A tím",
-    "dateOfBirth": "2000-01-01",
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "A tím hráč.",
@@ -1980,6 +2084,8 @@ export const players: Player[] = [
     "yellowCards": 0,
     "redCards": 0,
     "isActive": true
+    "birthYear": 1998,
+    "age": 28,
   }
 ];
 
