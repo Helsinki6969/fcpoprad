@@ -1,13 +1,12 @@
 import { Facebook, Instagram, Mail, Phone, MapPin, Lock } from 'lucide-react';
 import { Link } from 'react-router';
 import logo from '../assets/logo.png';
-import logoMestopoprad from '../assets/mestopoprad.png';
-import logoJubema from '../assets/jubema.png';
-import logoLunys from '../assets/lunys.png';
-import logoTatraclima from '../assets/tatraclima.png';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+
+  // Supabase storage base URL for images
+  const STORAGE_URL = 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images';
 
   return (
     <footer className="bg-[#003474] text-white">
@@ -190,28 +189,28 @@ export function Footer() {
             <div className="flex flex-wrap justify-center items-center gap-8">
               <div className="bg-white rounded-lg p-4 h-20 w-32 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src={logoMestopoprad}
+                  src={`${STORAGE_URL}/mestopoprad.png`}
                   alt="Mesto Poprad"
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
               <div className="bg-white rounded-lg p-4 h-20 w-32 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src={logoJubema}
+                  src={`${STORAGE_URL}/jubema.png`}
                   alt="Jubema"
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
               <div className="bg-white rounded-lg p-4 h-20 w-32 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src={logoLunys}
+                  src={`${STORAGE_URL}/lunys.png`}
                   alt="Lunys"
                   className="max-w-full max-h-full object-contain"
                 />
               </div>
               <div className="bg-white rounded-lg p-4 h-20 w-32 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src={logoTatraclima}
+                  src={`${STORAGE_URL}/tatraclima.png`}
                   alt="Tatra Clima"
                   className="max-w-full max-h-full object-contain"
                 />
