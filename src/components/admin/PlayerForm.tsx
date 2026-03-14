@@ -25,7 +25,6 @@ export function PlayerForm({ player, onSubmit, onCancel }: PlayerFormProps) {
     height: player?.height || 0,
     weight: player?.weight || 0,
     nationality: player?.nationality || 'Slovensko',
-    photoUrl: player?.photoUrl || '',
     bio: player?.bio || '',
     matchesPlayed: player?.matchesPlayed || 0,
     goals: player?.goals || 0,
@@ -175,15 +174,6 @@ export function PlayerForm({ player, onSubmit, onCancel }: PlayerFormProps) {
               placeholder="Slovensko"
             />
           </div>
-
-          {/* Fotka */}
-          <ImageUpload
-            label="Fotka hráča"
-            value={formData.photoUrl}
-            onChange={(url) => setFormData({ ...formData, photoUrl: url })}
-            type="general"
-            helpText="Odporúčaná veľkosť: 400x400px (štvorec)"
-          />
 
           {/* Biografia */}
           <div>

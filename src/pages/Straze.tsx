@@ -8,15 +8,15 @@ export function Straze() {
   // Stadium gallery images
   const galleryImages = [
     {
-      url: '/images/kostol_sv_jana_krstitela.jpg',
+      url: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/kostol_sv_jana_krstitela.jpg',
       caption: 'Kostol sv. Jána Krstiteľa v Strážach'
     },
     {
-      url: '/images/kostol_sv_jana_krstitela_2.jpg',
+      url: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/kostol_sv_jana_krstitela_2.jpg',
       caption: 'Detail kostola sv. Jána Krstiteľa'
     },
     {
-      url: '/images/strazepodtatrami.jpg',
+      url: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/strazepodtatrami.jpg',
       caption: 'Celkový pohľad na Stráže pod Tatrami'
     }
   ];

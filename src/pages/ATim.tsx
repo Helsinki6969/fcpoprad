@@ -1,8 +1,26 @@
+import { useState, useEffect } from 'react';
 import { PlayerTable } from '../components/PlayerTable';
-import { getPlayersByCategory } from '../data/players';
+import { getPlayersByCategory } from '../services/playerService';
+import { Player } from '../data/players';
 
 export function ATim() {
-  const players = getPlayersByCategory('A tím');
+  const [players, setPlayers] = useState<Player[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    getPlayersByCategory('A tím').then(data => {
+      setPlayers(data);
+      setIsLoading(false);
+    });
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#003474]"></div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">

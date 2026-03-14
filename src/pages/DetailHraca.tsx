@@ -1,12 +1,34 @@
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { ArrowLeft, Calendar, Ruler, Weight, Globe, Trophy, Target, Users } from 'lucide-react';
 import { Button } from '../components/ui/button';
-import { getPlayerById } from '../data/players';
+import { getPlayerById } from '../services/playerService';
+import { Player } from '../data/players';
 
 export function DetailHraca() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const player = id ? getPlayerById(id) : undefined;
+  const [player, setPlayer] = useState<Player | undefined>(undefined);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (id) {
+      getPlayerById(id).then(data => {
+        setPlayer(data);
+        setIsLoading(false);
+      });
+    } else {
+      setIsLoading(false);
+    }
+  }, [id]);
+
+  if (isLoading) {
+     return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#003474]"></div>
+      </div>
+    );
+  }
 
   if (!player) {
     return (
@@ -43,7 +65,7 @@ export function DetailHraca() {
             <div className="bg-white rounded-lg shadow-lg p-6">
               {/* Meno a číslo dresu */}
               <div className="flex flex-col items-center justify-center mb-6 pt-2">
-                {player.jerseyNumber && (
+                {player.jerseyNumber !== undefined && (
                   <div className="bg-[#003474] text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold shadow-lg mb-4">
                     {player.jerseyNumber}
                   </div>

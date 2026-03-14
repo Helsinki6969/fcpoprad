@@ -8,19 +8,19 @@ export function Stadion() {
   // Stadium gallery images
   const stadiumImages = [
     {
-      url: '/images/stadion1.jpg',
+      url: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/stadion1.jpg',
       caption: 'Pohľad na hlavnú tribúnu štadióna'
     },
     {
-      url: '/images/stadion2.jpg',
+      url: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/stadion2.jpg',
       caption: 'Hracie ihrisko FC Poprad - Stráže'
     },
     {
-      url: '/images/stadion3.jpg',
+      url: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/stadion3.jpg',
       caption: 'Detail hracieho povrchu'
     },
     {
-      url: '/images/stadion4.jpg',
+      url: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/stadion4.jpg',
       caption: 'Zázemie pre fanúšikov'
     }
   ];

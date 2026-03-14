@@ -172,20 +172,16 @@ export function Admin() {
 
 
   const loadPlayers = async () => {
+    setLoading(true);
     try {
-      // Load from localStorage (later can be replaced with API call)
-      const storedPlayers = localStorage.getItem('fcpoprad_players_v1');
-      if (storedPlayers) {
-        setPlayers(JSON.parse(storedPlayers));
-      } else {
-        // Load default players
-        const { players: defaultPlayers } = await import('../data/players');
-        setPlayers(defaultPlayers);
-        localStorage.setItem('fcpoprad_players_v1', JSON.stringify(defaultPlayers));
-      }
+      const { getAllPlayers } = await import('../services/playerService');
+      const data = await getAllPlayers();
+      setPlayers(data);
     } catch (error) {
       toast.error('Chyba pri načítaní hráčov');
       console.error(error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -710,17 +706,6 @@ export function Admin() {
                     <Card key={player.id}>
                       <CardContent className="p-6">
                         <div className="flex flex-col md:flex-row gap-4">
-                          <div className="w-full md:w-32 h-32 flex-shrink-0">
-                            <img
-                              src={player.photoUrl || 'https://via.placeholder.com/128x128?text=Bez+fotky'}
-                              alt={`${player.firstName} ${player.lastName}`}
-                              className="w-full h-full object-cover rounded"
-                              onError={(e) => {
-                                e.currentTarget.src = 'https://via.placeholder.com/128x128?text=Bez+fotky';
-                              }}
-                            />
-                          </div>
-
                           <div className="flex-1 min-w-0">
                             <div className="flex items-start justify-between gap-4">
                               <div className="flex-1">
