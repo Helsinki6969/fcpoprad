@@ -1,20 +1,10 @@
-import vojtovicImg from '../assets/vojtovic.jpg';
-import bendikImg from '../assets/bendik.jpg';
-import byckoImg from '../assets/bycko.jpg';
-import handzusImg from '../assets/handzus.jpg';
-import koterbaImg from '../assets/koterba.jpg';
-import pohlodImg from '../assets/pohlod.jpg';
-import ratajImg from '../assets/rataj.jpg';
-import vernarecImg from '../assets/vernarec.jpg';
-import gregaImg from '../assets/grega.jpg';
-
 export function CinovniciATreneri() {
-  // Data činovníkov a trénerov
+  // Data činovníkov a trénerov s fotkami zo Supabase Storage
   const officials = [
     {
       id: 1,
       name: 'Mikuláš Vojtovič',
-      photo: vojtovicImg,
+      photo: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/vojtovic.jpg',
       quote: '„V každej situácii sa nájde riešenie"',
       playerCareer: 'Nižná nad Oravou, Nové Mesto nad Váhom, Poprad- Stráže',
       officialCareer: '',
@@ -23,7 +13,7 @@ export function CinovniciATreneri() {
     {
       id: 2,
       name: 'Peter Bendík',
-      photo: bendikImg,
+      photo: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/bendik.jpg',
       quote: '„Nerob iným to, čo nechceš, aby oni robili Tebe"',
       playerCareer: 'TJ ŠM Poprad – Stráže (1973-1991)',
       officialCareer: 'TJ ŠM Poprad – Stráže (1985-1996), ŠK ZEMEDAR Poprad – Stráže (1996 – 2020)',
@@ -32,7 +22,7 @@ export function CinovniciATreneri() {
     {
       id: 3,
       name: 'Vladimír Bycko',
-      photo: byckoImg,
+      photo: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/bycko.jpg',
       quote: '„Ty si moje útočište a pevnosť moja. V tebe mám dôveru Bože môj."',
       playerCareer: 'Chemlon Humenné, Dukla Banská Bystrica, FK Rakýtovce',
       officialCareer: 'Spišská Nová Ves /2008 – 2009/, TJ Štart Hrabušice /2017 – 2020/, FK Poprad /2018 – 2019/',
@@ -41,7 +31,7 @@ export function CinovniciATreneri() {
     {
       id: 4,
       name: 'Peter Handzuš',
-      photo: handzusImg,
+      photo: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/handzus.jpg',
       quote: '„Jediný spôsob ako byť skutočne spokojný, je veriť, že to, čo robíme je skvelá práca. A jediný spôsob ako robiť skvelú prácu, je milovať to, čo robíme."',
       playerCareer: 'Poprad Veľká, FK Poprad, FK Svit',
       officialCareer: 'FK Poprad /1997-2020/',
@@ -50,16 +40,16 @@ export function CinovniciATreneri() {
     {
       id: 5,
       name: 'Mgr. Tomáš Koterba',
-      photo: koterbaImg,
+      photo: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/koterba.jpg',
       quote: '„ Choď si za svojím snom, on sám za Tebou nepríde."',
       playerCareer: 'TJ Slovan Levoča, FK 05 Levoča',
       officialCareer: 'TJ Slovan Levoča / 2000 – 2005/, FK 05 Levoča / 2005 – 2017/, Regionálny výberový tréner mládeže VsFZ / 2012 – 2015 /, FK Poprad /2016 – 2020/',
-      bio: 'Futbal je môj životný štýl, spôsob sebarealizácie, vyjadrenía sa a prostriedkom napĺňania si životných cieľov, či snov. Sny sú najlepším palivom na našej ceste. Je to u mňa skôr beh na dlhé trate, no som presvedčený, že futbal v konečnom dôsledku je spravodlivý a skôr, či neskôr vám vráti v akejkoľvek podobe to, čo ste mu odozvdali a obetovali. Som vďačný za proces a výsledky mojej práce výchovy nielen šikovných futbalistov, ale hlavne slušných ľudí.'
+      bio: 'Futbal je môj životný štýl, spôsob sebarealizácie, vyjadrenía sa a prostriedkom napĺňania si životných cieľov, či snov. Sny sú najlepším palivom na našej ceste. Je to u mňa skôr beh na dlhé trate, no som presvedčený, že futbal v konečnom dôsledku je spravodlivý and skôr, či neskôr vám vráti v akejkoľvek podobe to, čo ste mu odozvdali a obetovali. Som vďačný za proces a výsledky mojej práce výchovy nielen šikovných futbalistov, ale hlavne slušných ľudí.'
     },
     {
       id: 6,
       name: 'Mgr. Martin Pohlod',
-      photo: pohlodImg,
+      photo: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/pohlod.jpg',
       quote: '„Nebojte sa! Boží duch, ktorý je vo vás, je mocnejší ako Duch sveta!"',
       playerCareer: 'OFK Tatran Bystré, MFK Vranov nad Topľou, 1. FC Tatran Prešov, FC Pivovar Šariš Veľký Šariš, ŠK Štrba',
       officialCareer: 'FC Ružinov Bratislava /2008/, MFK Tatran Liptovský Mikuláš /2008 – 2015/, FK Poprad /2016 – 2018/, ŠK Štrba /2019 – 2020/',
@@ -68,7 +58,7 @@ export function CinovniciATreneri() {
     {
       id: 7,
       name: 'Peter Rataj',
-      photo: ratajImg,
+      photo: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/rataj.jpg',
       quote: '„Nikdy sa nevzdávaj a neskláňaj hlavu!"',
       playerCareer: 'Poprad, Svit, Lokomotíva Košice, Ružomberok, Petržalka, 1.FC Košice, Vienna, Kežmarok',
       officialCareer: 'Mládežnícky tréner FK POPRAD /2005 – 2020/',
@@ -77,7 +67,7 @@ export function CinovniciATreneri() {
     {
       id: 8,
       name: 'Mgr. Jozef Vernarec',
-      photo: vernarecImg,
+      photo: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/vernarec.jpg',
       quote: '„Viera, nádej a láska… ale najväčšia z nich je láska…" (1 Kor 13,13)',
       playerCareer: 'Dukla Banská Bystrica, ŠK Svätý Jur, FC Ružinov Bratislava, ŠK Tomášov, TJ Malínovo, FK 1931 Hranovnica, OFK Kravany, OFK 1934 Spišské Bystré, TJ Partizán Vernár',
       officialCareer: 'Mládežnícky tréner v FK Poprad (2011-2019), Regionálny výberový tréner mládeže VsFZ (2014 – 2016)',
@@ -86,11 +76,11 @@ export function CinovniciATreneri() {
     {
       id: 9,
       name: 'Branislav Grega',
-      photo: gregaImg,
+      photo: 'https://cnhgzdliqiixlxyiksio.supabase.co/storage/v1/object/public/images/grega.jpg',
       quote: '„Nehľadaj dôvod prečo sa to nedá, ale nájdi spôsob ako to pôjde"',
       playerCareer: 'Poprad Veľká, FK Poprad',
       officialCareer: 'FK Poprad /2008-2018/',
-      bio: 'Futbal je a bude jednou z dôležitých častí môjho života. Priniesol mi mnoho zážitkov, spomienok a priateľov, ale aj skúsenosti a ponáučení či už v športovom, ale aj v súkromnom živote.\n\nJe dôležité odovzdať tieto skúsenosti mládeži, aby im následne pomohli v ich ďalšom rozvíjaní…'
+      bio: 'Futbal je a bude jednou dôležitých častí môjho života. Priniesol mi mnoho zážitkov, spomienok a priateľov, ale aj skúsenosti a ponáučení či už v športovom, ale aj v súkromnom živote.\n\nJe dôležité odovzdať tieto skúsenosti mládeži, aby im následne pomohli v ich ďalšom rozvíjaní…'
     }
   ];
 
@@ -107,7 +97,7 @@ export function CinovniciATreneri() {
 
         {/* Officials List */}
         <div className="space-y-12">
-          {officials.map((official, index) => (
+          {officials.map((official) => (
             <div key={official.id} className="bg-white rounded-[30px] shadow-lg p-6 md:p-8">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
                 {/* Photo */}
@@ -147,7 +137,7 @@ export function CinovniciATreneri() {
 
               {/* Bio */}
               <div className="bg-gray-100 rounded-[20px] p-8">
-                <p className="text-xl text-gray-700 font-bold">
+                <p className="text-xl text-gray-700 font-bold whitespace-pre-line">
                   {official.bio}
                 </p>
               </div>

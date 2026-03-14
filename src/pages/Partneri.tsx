@@ -1,41 +1,34 @@
-import logoMestopoprad from '../assets/mestopoprad.png';
-import logoJubema from '../assets/jubema.png';
-import logoLunys from '../assets/lunys.png';
-import logoKingmedia from '../assets/kingmedia.png';
-import logoCvicisko from '../assets/cvicisko.png';
-import logoInpro from '../assets/inpro.png';
-import logoMorematracov from '../assets/morematracov.png';
-import logoBouquet from '../assets/bouquet.png';
-import logoElprokan from '../assets/elprokan.png';
-import logoKontajnerypoprad from '../assets/kontajnerypoprad.png';
-import logoRedosi from '../assets/redosi.png';
-import logoTatraclima from '../assets/tatraclima.png';
-import logoTatrycolor from '../assets/tatrycolor.png';
-import logoVipox from '../assets/vipox.png';
+import { useState, useEffect } from 'react';
+import { Partner, getAllPartners } from '../services/partnerService';
 
 export function Partneri() {
-  // General partner
-  const generalPartner = {
-    name: 'Mesto Poprad',
-    logo: logoMestopoprad,
-  };
+  const [partners, setPartners] = useState<Partner[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // Partners in order
-  const partners = [
-    { id: 1, name: 'Jubema', logo: logoJubema },
-    { id: 2, name: 'Lunys', logo: logoLunys },
-    { id: 3, name: 'Tatra Clima', logo: logoTatraclima },
-    { id: 4, name: 'King Media', logo: logoKingmedia },
-    { id: 5, name: 'Cvičisko', logo: logoCvicisko },
-    { id: 6, name: 'Inpro Poprad', logo: logoInpro },
-    { id: 7, name: 'Tatry Color', logo: logoTatrycolor },
-    { id: 8, name: 'Vipox', logo: logoVipox },
-    { id: 9, name: 'More matracov', logo: logoMorematracov },
-    { id: 10, name: 'Redosi', logo: logoRedosi },
-    { id: 11, name: 'Bouquet', logo: logoBouquet },
-    { id: 12, name: 'El Pro Kan', logo: logoElprokan },
-    { id: 13, name: 'Kontajnery Poprad', logo: logoKontajnerypoprad },
-  ];
+  useEffect(() => {
+    const fetchPartners = async () => {
+      try {
+        const data = await getAllPartners();
+        setPartners(data);
+      } catch (error) {
+        console.error('Error fetching partners:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    fetchPartners();
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#003474]"></div>
+      </div>
+    );
+  }
+
+  const generalPartner = partners.find(p => p.category === 'Generálny partner');
+  const otherPartners = partners.filter(p => p.category !== 'Generálny partner');
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
@@ -49,34 +42,62 @@ export function Partneri() {
         </div>
 
         {/* General Partner */}
-        <section className="mb-12">
-          <h2 className="text-[36px] font-bold text-[#B7975E] mb-6">Generálny partner:</h2>
-          <div className="bg-white rounded-lg p-8 w-full max-w-[370px] h-[370px] flex items-center justify-center shadow-lg">
-            <img
-              src={generalPartner.logo}
-              alt={generalPartner.name}
-              className="max-w-full max-h-full object-contain"
-            />
-          </div>
-        </section>
+        {generalPartner && (
+          <section className="mb-12">
+            <h2 className="text-[36px] font-bold text-[#B7975E] mb-6">Generálny partner:</h2>
+            <div className="bg-white rounded-lg p-8 w-full max-w-[370px] h-[370px] flex items-center justify-center shadow-lg">
+              {generalPartner.websiteUrl ? (
+                <a href={generalPartner.websiteUrl} target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+                  <img
+                    src={generalPartner.logoUrl}
+                    alt={generalPartner.name}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </a>
+              ) : (
+                <img
+                  src={generalPartner.logoUrl}
+                  alt={generalPartner.name}
+                  className="max-w-full max-h-full object-contain"
+                />
+              )}
+            </div>
+          </section>
+        )}
 
         {/* Partners Grid */}
         <section>
           <h2 className="text-[36px] font-bold text-[#B7975E] mb-6">Partneri:</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {partners.map((partner) => (
-              <div
-                key={partner.id}
-                className="bg-white rounded-lg p-8 h-[370px] flex items-center justify-center hover:shadow-xl transition-shadow shadow-lg"
-              >
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-            ))}
-          </div>
+          {otherPartners.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {otherPartners.map((partner) => (
+                <div
+                  key={partner.id}
+                  className="bg-white rounded-lg p-8 h-[370px] flex items-center justify-center hover:shadow-xl transition-shadow shadow-lg"
+                >
+                  {partner.websiteUrl ? (
+                    <a href={partner.websiteUrl} target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+                      <img
+                        src={partner.logoUrl}
+                        alt={partner.name}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={partner.logoUrl}
+                      alt={partner.name}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12 bg-white rounded-lg shadow-lg">
+              <p className="text-xl text-gray-500">Zatiaľ nie sú pridaní žiadni partneri.</p>
+            </div>
+          )}
         </section>
       </div>
     </div>

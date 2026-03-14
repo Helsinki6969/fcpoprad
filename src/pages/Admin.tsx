@@ -40,8 +40,14 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from '../components/ui/alert-dialog';
-import { Plus, Pencil, Trash2, Search, Lock, Video as VideoIcon, Eye, User } from 'lucide-react';
+import { Plus, Pencil, Trash2, Search, Lock, Video as VideoIcon, Eye, User, Target, Trophy, Users, Calendar } from 'lucide-react';
 import { toast } from 'sonner';
+import { 
+  getAllPlayers, 
+  createPlayer, 
+  updatePlayer, 
+  deletePlayer as deletePlayerService 
+} from '../services/playerService';
 
 export function Admin() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -174,7 +180,6 @@ export function Admin() {
   const loadPlayers = async () => {
     setLoading(true);
     try {
-      const { getAllPlayers } = await import('../services/playerService');
       const data = await getAllPlayers();
       setPlayers(data);
     } catch (error) {
@@ -228,36 +233,34 @@ export function Admin() {
   };
 
 
-  const handleCreateOrUpdatePlayer = (playerData: Omit<Player, 'id' | 'age' | 'isActive'>) => {
+  const handleCreateOrUpdatePlayer = async (playerData: Omit<Player, 'id' | 'age' | 'isActive'>) => {
     setLoading(true);
     try {
+      const age = calculateAge(playerData.dateOfBirth);
+      const extendedPlayerData = { ...playerData, age };
+
       if (editingPlayer) {
-        // Aktualizácia existujúceho hráča
-        const updatedPlayers = players.map(player =>
-          player.id === editingPlayer.id
-            ? { ...playerData, id: editingPlayer.id, age: calculateAge(playerData.dateOfBirth), isActive: true }
-            : player
-        );
-        setPlayers(updatedPlayers);
-        localStorage.setItem('fcpoprad_players_v1', JSON.stringify(updatedPlayers));
-        toast.success('Hráč bol úspešne aktualizovaný');
+        // Aktualizácia v Supabase
+        const result = await updatePlayer(editingPlayer.id, extendedPlayerData);
+        if (result) {
+          toast.success('Hráč bol úspešne aktualizovaný');
+        } else {
+          throw new Error('Nepodarilo sa aktualizovať hráča v databáze');
+        }
       } else {
-        // Vytvorenie nového hráča
-        const newPlayer: Player = {
-          ...playerData,
-          id: (Math.max(0, ...players.map(p => parseInt(p.id))) + 1).toString(),
-          age: calculateAge(playerData.dateOfBirth),
-          isActive: true
-        };
-        const updatedPlayers = [...players, newPlayer];
-        setPlayers(updatedPlayers);
-        localStorage.setItem('fcpoprad_players_v1', JSON.stringify(updatedPlayers));
-        toast.success('Hráč bol úspešne vytvorený');
+        // Vytvorenie v Supabase
+        const result = await createPlayer(extendedPlayerData);
+        if (result) {
+          toast.success('Hráč bol úspešne vytvorený');
+        } else {
+          throw new Error('Nepodarilo sa vytvoriť hráča v databáze');
+        }
       }
+      await loadPlayers();
       setShowPlayerForm(false);
       setEditingPlayer(null);
-    } catch (error) {
-      toast.error('Chyba pri ukladaní hráča');
+    } catch (error: any) {
+      toast.error('Chyba pri ukladaní hráča: ' + (error.message || ''));
       console.error(error);
     } finally {
       setLoading(false);
@@ -290,15 +293,14 @@ export function Admin() {
         toast.success('Video bolo úspešne vymazané');
         await loadVideos();
       } else if (itemToDelete.type === 'player') {
-        // Soft delete hráča
-        const updatedPlayers = players.map(player =>
-          player.id === itemToDelete.id
-            ? { ...player, isActive: false }
-            : player
-        );
-        setPlayers(updatedPlayers);
-        localStorage.setItem('fcpoprad_players_v1', JSON.stringify(updatedPlayers));
-        toast.success('Hráč bol úspešne vymazaný');
+        // Soft delete hráča v Supabase
+        const success = await deletePlayerService(itemToDelete.id.toString());
+        if (success) {
+          toast.success('Hráč bol úspešne vymazaný');
+          await loadPlayers();
+        } else {
+          throw new Error('Nepodarilo sa vymazať hráča z databázy');
+        }
       }
       setDeleteDialogOpen(false);
       setItemToDelete(null);
@@ -730,15 +732,18 @@ export function Admin() {
                                     </>
                                   )}
                                 </div>
-                                <div className="flex flex-wrap gap-3 text-sm">
-                                  <span className="px-2 py-1 bg-gray-100 rounded">
-                                    ⚽ {player.goals} gólov
+                                <div className="flex flex-wrap gap-4 text-sm">
+                                  <span className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-[#003474] rounded-full font-medium border border-blue-100">
+                                    <Target className="w-4 h-4" />
+                                    {player.goals} gólov
                                   </span>
-                                  <span className="px-2 py-1 bg-gray-100 rounded">
-                                    🎯 {player.assists} asistencií
+                                  <span className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 text-[#B7975E] rounded-full font-medium border border-amber-100">
+                                    <Trophy className="w-4 h-4" />
+                                    {player.assists} asistencií
                                   </span>
-                                  <span className="px-2 py-1 bg-gray-100 rounded">
-                                    🏃 {player.matchesPlayed} zápasov
+                                  <span className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 text-gray-700 rounded-full font-medium border border-gray-200">
+                                    <Users className="w-4 h-4" />
+                                    {player.matchesPlayed} zápasov
                                   </span>
                                 </div>
                               </div>
