@@ -24,7 +24,7 @@ $email = filter_var($data['email'], FILTER_SANITIZE_EMAIL);
 $subject = strip_tags($data['subject']);
 $message = strip_tags($data['message']);
 
-$to = "adicekadickovy167@gmail.com"; 
+$to = "turlik.adrian167@gmail.com"; // Tu si dajte váš cieľový mail
 
 $email_subject = "Kontaktný formulár: " . $subject;
 $email_html = "
@@ -52,7 +52,7 @@ curl_setopt($ch, CURLOPT_URL, 'https://api.resend.com/emails');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode([
-    'from' => 'FC Poprad <onboarding@resend.dev>', // Resend vyžaduje overenú doménu, zatiaľ použijeme ich testovaciu
+    'from' => 'FC Poprad <info@fcpoprad.info>', // Zmeňte po overení domény v Resend
     'to' => [$to],
     'reply_to' => $email,
     'subject' => $email_subject,
