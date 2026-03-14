@@ -63,7 +63,7 @@ export function PlayerTable({ players }: PlayerTableProps) {
                       Meno
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider hidden md:table-cell">
-                      Vek
+                      Ročník / Vek
                     </th>
                     <th className="px-6 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider hidden lg:table-cell">
                       Zápasy
@@ -104,9 +104,9 @@ export function PlayerTable({ players }: PlayerTableProps) {
                         </div>
                       </td>
 
-                      {/* Vek */}
+                      {/* Ročník / Vek */}
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700 hidden md:table-cell">
-                        {player.age ? `${player.age} rokov` : '-'}
+                        {player.birthYear || '-'}{player.age ? ` / ${player.age} r.` : ''}
                       </td>
 
                       {/* Zápasy */}

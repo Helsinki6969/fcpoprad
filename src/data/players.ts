@@ -11,6 +11,7 @@ export interface Player {
   weight?: number; // kg
   nationality?: string;
   photoUrl?: string;
+  birthYear?: number;
   bio?: string;
   // Štatistiky
   matchesPlayed: number;
@@ -41,7 +42,8 @@ export const players: Player[] = [
     "jerseyNumber": 21,
     "position": "Brankár",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
+    "birthYear": 2013,
+    "age": 13,
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -59,7 +61,8 @@ export const players: Player[] = [
     "jerseyNumber": 39,
     "position": "Brankár",
     "category": "U13",
-    "dateOfBirth": "2000-01-01",
+    "birthYear": 2013,
+    "age": 13,
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",

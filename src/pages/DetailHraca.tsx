@@ -66,6 +66,16 @@ export function DetailHraca() {
 
               {/* Základné info */}
               <div className="space-y-3 border-t pt-4">
+                {player.birthYear && (
+                  <div className="flex items-center gap-3">
+                    <Calendar className="h-5 w-5 text-[#003474]" />
+                    <div>
+                      <div className="text-sm text-gray-600">Ročník</div>
+                      <div className="font-semibold">{player.birthYear}</div>
+                    </div>
+                  </div>
+                )}
+
                 {player.age && (
                   <div className="flex items-center gap-3">
                     <Calendar className="h-5 w-5 text-[#003474]" />
