@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router';
-import { ArrowLeft, Calendar, Ruler, Weight, Globe, Trophy, Target, Users } from 'lucide-react';
+import { ArrowLeft, Calendar, Ruler, Weight, Globe, Trophy, Target, Users, CreditCard } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { getPlayerById } from '../data/players';
 
@@ -142,7 +142,7 @@ export function DetailHraca() {
 
                 <div className="bg-gray-50 rounded-lg p-4 text-center">
                   <div className="flex items-center justify-center h-8 mb-2">
-                    <div className="w-5 h-7 bg-[#ffd700] rounded-sm border-2 border-[#e6c200] shadow-[2px_2px_0_rgba(0,0,0,0.1)] transform -rotate-12"></div>
+                    <CreditCard className="h-7 w-7 text-[#ffd700] fill-[#ffd700] transform -rotate-12 drop-shadow-sm" />
                   </div>
                   <div className="text-3xl font-bold text-yellow-600">
                     {player.yellowCards}
@@ -152,7 +152,7 @@ export function DetailHraca() {
 
                 <div className="bg-gray-50 rounded-lg p-4 text-center">
                   <div className="flex items-center justify-center h-8 mb-2">
-                    <div className="w-5 h-7 bg-[#ff4d4d] rounded-sm border-2 border-[#e60000] shadow-[2px_2px_0_rgba(0,0,0,0.1)] transform rotate-12"></div>
+                    <CreditCard className="h-7 w-7 text-[#ff4d4d] fill-[#ff4d4d] transform rotate-12 drop-shadow-sm" />
                   </div>
                   <div className="text-3xl font-bold text-red-600">
                     {player.redCards}
