@@ -54,7 +54,6 @@ export function Header() {
     },
     {
       label: 'TÍMY',
-      href: '/timy',
       dropdown: [
         { label: 'A-tím', href: '/atim' },
         { label: 'U19', href: '/u19' },
@@ -124,16 +123,26 @@ export function Header() {
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
                   {/* Hlavná položka menu */}
-                  <Link
-                    to={item.href}
-                    className={`flex items-center px-3 py-2 text-sm font-medium hover:bg-blue-700 rounded transition-colors ${
-                      location.pathname === item.href ? 'bg-blue-700' : '' // Zvýrazní aktívnu stránku
-                    }`}
-                  >
-                    {item.label}
-                    {/* Šípka dolu, ak má dropdown */}
-                    {item.dropdown && <ChevronDown className="ml-1 w-4 h-4" />}
-                  </Link>
+                  {item.href ? (
+                    <Link
+                      to={item.href}
+                      className={`flex items-center px-3 py-2 text-sm font-medium hover:bg-blue-700 rounded transition-colors ${
+                        location.pathname === item.href ? 'bg-blue-700' : '' // Zvýrazní aktívnu stránku
+                      }`}
+                    >
+                      {item.label}
+                      {/* Šípka dolu, ak má dropdown */}
+                      {item.dropdown && <ChevronDown className="ml-1 w-4 h-4" />}
+                    </Link>
+                  ) : (
+                    <div
+                      className="flex items-center px-3 py-2 text-sm font-medium hover:bg-blue-700 rounded transition-colors cursor-default select-none"
+                    >
+                      {item.label}
+                      {/* Šípka dolu, ak má dropdown */}
+                      {item.dropdown && <ChevronDown className="ml-1 w-4 h-4" />}
+                    </div>
+                  )}
                   
                   {/* Dropdown menu - zobrazí sa len ak je activeDropdown nastavené na túto položku */}
                   {item.dropdown && activeDropdown === item.label && (
@@ -192,15 +201,23 @@ export function Header() {
               {menuItems.map((item) => (
                 <div key={item.label} className="border-b border-blue-700/50 pb-4">
                   {/* Hlavná položka - výraznejšia */}
-                  <Link
-                    to={item.href}
-                    className={`block py-2 text-xl font-bold transition-colors ${
-                      location.pathname === item.href ? 'text-[#B7975E]' : 'text-white'
-                    }`}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
+                  {item.href ? (
+                    <Link
+                      to={item.href}
+                      className={`block py-2 text-xl font-bold transition-colors ${
+                        location.pathname === item.href ? 'text-[#B7975E]' : 'text-white'
+                      }`}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    <div
+                      className="block py-2 text-xl font-bold text-white opacity-80"
+                    >
+                      {item.label}
+                    </div>
+                  )}
 
                   {/* Rozbalené podpoložky priamo pod hlavnou položkou */}
                   {item.dropdown && (

@@ -12,7 +12,6 @@ import { U19 } from './pages/U19';
 import { U17 } from './pages/U17';
 import { U15 } from './pages/U15';
 import { U13 } from './pages/U13';
-import { Timy } from './pages/Timy';
 import { Partneri } from './pages/Partneri';
 import { AkoNamMozesPomoct } from './pages/AkoNamMozesPomoct';
 import { Kontakt } from './pages/Kontakt';
@@ -70,8 +69,6 @@ export default function App() {
             <Route path="/u15" element={<U15 />} />
             <Route path="/u13" element={<U13 />} />
             
-            {/* Prehľad všetkých tímov */}
-            <Route path="/timy" element={<Timy />} />
             
             {/* Partneri a kontakt */}
             <Route path="/partneri" element={<Partneri />} />
