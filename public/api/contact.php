@@ -36,6 +36,13 @@ $email_html = "
     <p><small>Táto správa bola tiež uložená v Supabase databáze.</small></p>
 ";
 
+// Kontrola, či je dostupná funkcia curl_init
+if (!function_exists('curl_init')) {
+    http_response_code(500);
+    echo json_encode(["error" => "PHP rozšírenie CURL nie je na serveri povolené. Kontaktujte administrátora."]);
+    exit;
+}
+
 // Resend API integrácia
 $api_key = 're_b9XkGpLK_34MUdkBszbkRc4s57Zf4s1q6';
 
@@ -59,17 +66,20 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
 $result = curl_exec($ch);
 $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$curl_error = curl_error($ch);
+curl_close($ch);
 
-if (curl_errno($ch)) {
+if ($curl_error) {
     http_response_code(500);
-    echo json_encode(["error" => "Chyba API: " . curl_error($ch)]);
+    echo json_encode(["error" => "Chyba pri komunikácii s e-mailovou bránou: " . $curl_error]);
 } else {
     if ($http_code >= 200 && $http_code < 300) {
-        echo json_encode(["success" => true, "message" => "Mail bol odoslaný cez Resend"]);
+        echo json_encode(["success" => true, "message" => "Mail bol úspešne odoslaný"]);
     } else {
         http_response_code($http_code);
-        echo json_encode(["error" => "Nepodarilo sa odoslať mail cez Resend. Odpoveď: " . $result]);
+        $resend_response = json_decode($result, true);
+        $error_msg = isset($resend_response['message']) ? $resend_response['message'] : $result;
+        echo json_encode(["error" => "E-mailová brána (Resend) vrátila chybu: " . $error_msg]);
     }
 }
-curl_close($ch);
 ?>

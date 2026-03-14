@@ -36,21 +36,36 @@ export function Kontakt() {
       if (error) throw error;
 
       // Volanie PHP mailera na odoslanie notifikácie na mail
-      // Poznámka: Nerobíme 'await', aby sme nezdržiavali užívateľa, ak by mailer trval dlhšie
-      fetch('/api/contact.php', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      }).catch(err => console.error('Email notification failed:', err));
+      try {
+        const mailResponse = await fetch('/api/contact.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+        
+        const mailData = await mailResponse.json();
+        
+        if (!mailResponse.ok) {
+          console.warn('E-mail notification partially failed:', mailData.error);
+          setSubmitStatus('error');
+          setErrorMessage(`Správa bola uložená v databáze, ale e-mailovú notifikáciu sa nepodarilo odoslať: ${mailData.error}`);
+          return; // V prípade chyby mailu nebudeme vymazávať formulár, aby ho užívateľ videl
+        }
 
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } catch (err: any) {
+        console.error('Email notification failed:', err);
+        setSubmitStatus('error');
+        setErrorMessage('Správa bola uložená v databáze, ale spojenie s e-mailovým serverom zlyhalo.');
+        return;
+      }
       
       // Skryť success správu po 5 sekundách
       setTimeout(() => setSubmitStatus('idle'), 5000);
     } catch (error: any) {
       setSubmitStatus('error');
-      setErrorMessage(error.message || 'Nepodarilo sa odoslať správu. Skúste to prosím neskôr.');
+      setErrorMessage(`Chyba pri odosielaní: ${error.message || 'Skúste to prosím neskôr.'}`);
       console.error('Error sending contact form:', error);
     } finally {
       setIsSubmitting(false);
