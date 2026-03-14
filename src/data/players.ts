@@ -42,8 +42,6 @@ export const players: Player[] = [
     "jerseyNumber": 21,
     "position": "Brankár",
     "category": "U13",
-    "birthYear": 2013,
-    "age": 13,
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -52,7 +50,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
+    "birthYear": 2014,
+    "age": 12
   },
   {
     "id": "2",
@@ -61,8 +61,6 @@ export const players: Player[] = [
     "jerseyNumber": 39,
     "position": "Brankár",
     "category": "U13",
-    "birthYear": 2013,
-    "age": 13,
     "nationality": "Slovensko",
     "photoUrl": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=400",
     "bio": "U13 hráč.",
@@ -71,7 +69,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
+    "birthYear": 2014,
+    "age": 12
   },
   {
     "id": "3",
@@ -88,9 +88,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "4",
@@ -107,9 +107,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "5",
@@ -126,9 +126,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "6",
@@ -145,9 +145,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "7",
@@ -164,9 +164,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "8",
@@ -183,9 +183,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "9",
@@ -202,9 +202,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "10",
@@ -221,9 +221,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "11",
@@ -240,9 +240,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "12",
@@ -259,9 +259,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "13",
@@ -278,9 +278,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "14",
@@ -297,9 +297,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "15",
@@ -316,9 +316,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "16",
@@ -335,9 +335,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "17",
@@ -354,9 +354,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "18",
@@ -373,9 +373,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "19",
@@ -392,9 +392,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "20",
@@ -411,9 +411,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "21",
@@ -430,9 +430,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "22",
@@ -449,9 +449,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 17,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2014,
-    "age": 12,
+    "age": 12
   },
   {
     "id": "23",
@@ -468,9 +468,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "24",
@@ -487,9 +487,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "25",
@@ -506,9 +506,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 2,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "26",
@@ -525,9 +525,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "27",
@@ -544,9 +544,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "28",
@@ -563,9 +563,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "29",
@@ -582,9 +582,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "30",
@@ -601,9 +601,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "31",
@@ -620,9 +620,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "32",
@@ -639,9 +639,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 3,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "33",
@@ -658,9 +658,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "34",
@@ -677,9 +677,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "35",
@@ -696,9 +696,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "36",
@@ -715,9 +715,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 2,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "37",
@@ -734,9 +734,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "38",
@@ -753,9 +753,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "39",
@@ -772,9 +772,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "40",
@@ -791,9 +791,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "41",
@@ -810,9 +810,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "42",
@@ -829,9 +829,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "43",
@@ -848,9 +848,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "44",
@@ -867,9 +867,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 5,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2012,
-    "age": 14,
+    "age": 14
   },
   {
     "id": "46",
@@ -886,9 +886,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 6,
     "redCards": 2,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "47",
@@ -905,9 +905,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "48",
@@ -924,9 +924,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 4,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "49",
@@ -943,9 +943,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 13,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "50",
@@ -962,9 +962,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "51",
@@ -981,9 +981,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 12,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "52",
@@ -1000,9 +1000,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "53",
@@ -1019,9 +1019,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 4,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "54",
@@ -1038,9 +1038,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "56",
@@ -1057,9 +1057,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 2,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "57",
@@ -1076,9 +1076,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 7,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "58",
@@ -1095,9 +1095,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 7,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "59",
@@ -1114,9 +1114,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "60",
@@ -1133,9 +1133,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "61",
@@ -1152,9 +1152,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 7,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "62",
@@ -1171,9 +1171,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "63",
@@ -1190,9 +1190,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "64",
@@ -1209,9 +1209,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 2,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "65",
@@ -1228,9 +1228,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "66",
@@ -1247,9 +1247,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "67",
@@ -1266,9 +1266,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "68",
@@ -1285,9 +1285,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2010,
-    "age": 16,
+    "age": 16
   },
   {
     "id": "69",
@@ -1304,9 +1304,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 13,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "71",
@@ -1323,9 +1323,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 15,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "72",
@@ -1342,9 +1342,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 6,
     "redCards": 2,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "73",
@@ -1361,9 +1361,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 15,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "74",
@@ -1380,9 +1380,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 14,
     "redCards": 2,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "75",
@@ -1399,9 +1399,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 24,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "76",
@@ -1418,9 +1418,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "77",
@@ -1437,9 +1437,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 5,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "78",
@@ -1456,9 +1456,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 4,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "79",
@@ -1475,9 +1475,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 8,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "80",
@@ -1494,9 +1494,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 17,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "81",
@@ -1513,9 +1513,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 6,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "82",
@@ -1532,9 +1532,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 20,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "83",
@@ -1551,9 +1551,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 5,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "84",
@@ -1570,9 +1570,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 11,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 2008,
-    "age": 18,
+    "age": 18
   },
   {
     "id": "89",
@@ -1589,9 +1589,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 9,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "90",
@@ -1608,9 +1608,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 2,
     "redCards": 2,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "91",
@@ -1627,9 +1627,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "92",
@@ -1646,9 +1646,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 54,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "93",
@@ -1665,9 +1665,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 34,
     "redCards": 3,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "94",
@@ -1684,9 +1684,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 7,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "95",
@@ -1703,9 +1703,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 2,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "96",
@@ -1722,9 +1722,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 20,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "97",
@@ -1741,9 +1741,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 5,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "98",
@@ -1760,9 +1760,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 10,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "99",
@@ -1779,9 +1779,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 46,
     "redCards": 3,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "100",
@@ -1798,9 +1798,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 6,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "102",
@@ -1817,9 +1817,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 41,
     "redCards": 5,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "103",
@@ -1836,9 +1836,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 14,
     "redCards": 2,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "104",
@@ -1855,9 +1855,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 40,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "105",
@@ -1874,9 +1874,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 20,
     "redCards": 2,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "106",
@@ -1893,9 +1893,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 47,
     "redCards": 2,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "107",
@@ -1912,9 +1912,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 8,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "109",
@@ -1931,9 +1931,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 12,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "110",
@@ -1950,9 +1950,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 28,
     "redCards": 1,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "111",
@@ -1969,9 +1969,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 21,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "112",
@@ -1988,9 +1988,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 5,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "113",
@@ -2007,9 +2007,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 31,
     "redCards": 5,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "114",
@@ -2026,9 +2026,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 38,
     "redCards": 2,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "115",
@@ -2045,9 +2045,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 1,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "116",
@@ -2064,9 +2064,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 4,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   },
   {
     "id": "117",
@@ -2083,9 +2083,9 @@ export const players: Player[] = [
     "assists": 0,
     "yellowCards": 0,
     "redCards": 0,
-    "isActive": true
+    "isActive": true,
     "birthYear": 1998,
-    "age": 28,
+    "age": 28
   }
 ];
 
