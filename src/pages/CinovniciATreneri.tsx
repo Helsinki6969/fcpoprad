@@ -18,7 +18,7 @@ export function CinovniciATreneri() {
       quote: '„V každej situácii sa nájde riešenie"',
       playerCareer: 'Nižná nad Oravou, Nové Mesto nad Váhom, Poprad- Stráže',
       officialCareer: '',
-      bio: 'Do Stráže som prišiel v 2. roku vojenskej základnej služby v roku 1973 do mužstva, ktoré prežívalo svoje najlepšie obdobie, do veľmi dobrej partie. Ako veľmi malá mestská časť sme dokázali konkurovať všetkým primestským klubom , vrátene Popradu. Neskôr prišli horšie časy. Futbalové kluby Matejovce , Spišská Sobota aj Veľká zanikli aj pri meste Poprad ostali len Stráže… Vďaka až fanatizmu niektorých ľudí zo Stráž sme dokázali udržať futbal až dodnes. „Funkcionárčiť" som začal ešte ako aktívny hráč cca v r.1980 a ostalo to vo mne až dodnes. Už je tomu 40 rokov.. Futbal a mladých ľudí okolo neho mám rád dodnes a dúfam, že aj oni mňa. Verím, že sa pomoci príchodom novej krvi do našich rád klub znova lepšie časy.'
+      bio: 'Do Stráž som prišiel v 2. roku vojenskej základnej služby v roku 1973 do mužstva, ktoré prežívalo svoje najlepšie obdobie, do veľmi dobrej partie. Ako veľmi malá mestská časť sme dokázali konkurovať všetkým primestským klubom , vrátene Popradu. Neskôr prišli horšie časy. Futbalové kluby Matejovce , Spišská Sobota aj Veľká zanikli aj pri meste Poprad ostali len Stráže… Vďaka až fanatizmu niektorých ľudí zo Stráž sme dokázali udržať futbal až dodnes. „Funkcionárčiť" som začal ešte ako aktívny hráč cca v r.1980 a ostalo to vo mne až dodnes. Už je tomu 40 rokov.. Futbal a mladých ľudí okolo neho mám rád dodnes a dúfam, že aj oni mňa. Verím, že sa pomoci príchodom novej krvi do našich rád klub znova lepšie časy.'
     },
     {
       id: 2,
@@ -112,10 +112,10 @@ export function CinovniciATreneri() {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
                 {/* Photo */}
                 <div className="lg:col-span-1">
-                  <img 
-                    src={official.photo} 
-                    alt={official.name} 
-                    className="w-full h-full object-cover rounded-[20px]" 
+                  <img
+                    src={official.photo}
+                    alt={official.name}
+                    className="w-full h-full object-cover rounded-[20px]"
                   />
                 </div>
 
@@ -124,7 +124,7 @@ export function CinovniciATreneri() {
                   <h2 className="text-3xl md:text-4xl font-bold text-black">
                     {official.name}
                   </h2>
-                  
+
                   <p className="text-xl text-gray-700 italic">
                     {official.quote}
                   </p>
