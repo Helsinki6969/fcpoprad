@@ -24,7 +24,11 @@ $email = filter_var($data['email'], FILTER_SANITIZE_EMAIL);
 $subject = strip_tags($data['subject']);
 $message = strip_tags($data['message']);
 
-$to = "turlik.adrian167@gmail.com"; // Tu si dajte váš cieľový mail
+$to = [
+    "turlik.adrian167@gmail.com",
+    "turlik.adrian@fcpoprad.info",
+    "komisia@fcpoprad.info"
+]; 
 
 $email_subject = "Kontaktný formulár: " . $subject;
 $email_html = "
@@ -53,7 +57,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode([
     'from' => 'FC Poprad <info@fcpoprad.info>', // Zmeňte po overení domény v Resend
-    'to' => [$to],
+    'to' => $to,
     'reply_to' => $email,
     'subject' => $email_subject,
     'html' => $email_html
