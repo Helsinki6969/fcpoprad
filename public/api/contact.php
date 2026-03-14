@@ -24,7 +24,7 @@ $email = filter_var($data['email'], FILTER_SANITIZE_EMAIL);
 $subject = strip_tags($data['subject']);
 $message = strip_tags($data['message']);
 
-$to = "turlik.adrian167@gmail.com"; 
+$to = "adicekadickovy167@gmail.com"; 
 
 $email_subject = "Kontaktný formulár: " . $subject;
 $email_html = "
