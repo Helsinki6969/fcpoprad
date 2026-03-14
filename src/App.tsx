@@ -17,7 +17,7 @@ import { AkoNamMozesPomoct } from './pages/AkoNamMozesPomoct';
 import { Kontakt } from './pages/Kontakt';
 import { Clanky } from './pages/Clanky';
 import { DetailClanku } from './pages/DetailClanku';
-import { Sprava } from './pages/Admin';
+import { Admin } from './pages/Admin';
 import { KlubovaTv } from './pages/KlubovaTv';
 import { Stadion } from './pages/Stadion';
 import { Straze } from './pages/Straze';
@@ -40,58 +40,55 @@ export default function App() {
       <div className="min-h-screen bg-gray-50 flex flex-col">
         {/* Header sa zobrazuje na vrchu každej stránky */}
         <Header />
-        
+
         {/* Main content area - flex-grow zabezpečí, že vypĺňa priestor medzi header a footer */}
         <main className="flex-grow">
           {/* Routes - definuje všetky URL cesty a ich zodpovedajúce komponenty */}
           <Routes>
             {/* Domovská stránka */}
             <Route path="/" element={<Domov />} />
-            
+
             {/* Klubové stránky - TV, štadión, hymna, história */}
-            <Route path="/klubova-tv" element={<KlubovaTv />} />
+            <Route path="/klubovatv" element={<KlubovaTv />} />
             <Route path="/stadion" element={<Stadion />} />
             <Route path="/straze" element={<Straze />} />
             <Route path="/hymna" element={<KlubovaHymna />} />
-            <Route path="/strate" element={<Straze />} /> {/* Alternatívna URL pre Straže */}
-            <Route path="/klubova-hymna" element={<KlubovaHymna />} /> {/* Alternatívna URL pre hymnu */}
             <Route path="/historia" element={<Historia />} />
-            <Route path="/osoby" element={<CinovniciATreneri />} />
-            <Route path="/misia" element={<Poslanie />} />
-            <Route path="/vylepsenie" element={<AkoSaZlepsujeme />} />
-            <Route path="/tyzdennik" element={<TyzdennyMikrocyklus />} />
-            <Route path="/tyzdenni-mikrocyklus" element={<TyzdennyMikrocyklus />} /> {/* Alternatívna URL */}
-            
+            <Route path="/cinovniciatreneri" element={<CinovniciATreneri />} />
+            <Route path="/poslanie" element={<Poslanie />} />
+            <Route path="/akosazlepsujeme" element={<AkoSaZlepsujeme />} />
+            <Route path="/tyzdennymikrocyklus" element={<TyzdennyMikrocyklus />} /> {/* Alternatívna URL */}
+
             {/* Tímy - rôzne kategórie */}
             <Route path="/atim" element={<ATim />} />
             <Route path="/u19" element={<U19 />} />
             <Route path="/u17" element={<U17 />} />
             <Route path="/u15" element={<U15 />} />
             <Route path="/u13" element={<U13 />} />
-            
-            
+
+
             {/* Partneri a kontakt */}
             <Route path="/partneri" element={<Partneri />} />
-            <Route path="/ako-pomohnut" element={<AkoNamMozesPomoct />} />
+            <Route path="/akopomoct" element={<AkoNamMozesPomoct />} />
             <Route path="/kontakt" element={<Kontakt />} />
-            
+
             {/* Články */}
             <Route path="/clanky" element={<Clanky />} /> {/* Zoznam všetkých článkov */}
             <Route path="/aktuality" element={<Clanky />} /> {/* Alias pre články */}
-            <Route path="/clanky/:slug" element={<DetailClanku />} /> {/* Detail jedného článku - :slug je dynamický parameter */}
-            
+            <Route path="/clanky/:slug" element={<DetailClanku />} /> {/* Detail jedného článku */}
+
             {/* Admin panel - chránené heslo: fcpoprad2026 */}
-            <Route path="/admin" element={<Sprava />} />
-            
+            <Route path="/admin" element={<Admin />} />
+
             {/* Detail hráča */}
             <Route path="/hrac/:id" element={<DetailHraca />} /> {/* Detail jedného hráča - :id je dynamický parameter */}
           </Routes>
         </main>
-        
+
         {/* Footer sa zobrazuje na spodku každej stránky */}
         <Footer />
       </div>
-      
+
       {/* Toaster - notifikácie zobrazujúce sa v pravom hornom rohu (napr. "Článok bol uložený") */}
       <Toaster position="top-right" />
     </BrowserRouter>

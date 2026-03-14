@@ -6,10 +6,10 @@ import logo from '../assets/logo.png'; // Logo FC Poprad
 export function Header() {
   // State pre otvorenie/zatvorenie mobilného menu
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+
   // State pre sledovanie, ktoré dropdown menu je práve otvorené (null = žiadne)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  
+
   // Hook pre zistenie aktuálnej URL cesty
   const location = useLocation();
 
@@ -35,10 +35,10 @@ export function Header() {
       href: '/',
       dropdown: [
         { label: 'Aktuálne', href: '/clanky' },
-        { label: 'Klubová TV', href: '/klubova-tv' },
+        { label: 'Klubová TV', href: '/klubovatv' },
         { label: 'Štadión', href: '/stadion' },
         { label: 'Stráže pod Tatrami', href: '/straze' },
-        { label: 'Klubová hymna', href: '/klubova-hymna' }
+        { label: 'Klubová hymna', href: '/hymna' }
       ]
     },
     {
@@ -46,10 +46,10 @@ export function Header() {
       href: '/historia',
       dropdown: [
         { label: 'História', href: '/historia' },
-        { label: 'Predstavitelia klubu', href: '/osoby' },
-        { label: 'Poslanie', href: '/misia' },
-        { label: 'Ako sa zlepšujeme', href: '/vylepsenie' },
-        { label: 'Klubová hymna', href: '/klubova-hymna' }
+        { label: 'Činovníci a tréneri', href: '/cinovniciatreneri' },
+        { label: 'Poslanie', href: '/poslanie' },
+        { label: 'Ako sa zlepšujeme', href: '/akosazlepsujeme' },
+        { label: 'Klubová hymna', href: '/hymna' }
       ]
     },
     {
@@ -67,12 +67,12 @@ export function Header() {
       href: '/partneri',
       dropdown: [
         { label: 'Partneri', href: '/partneri' },
-        { label: 'Ako nám môžeš pomôcť?', href: '/ako-pomohnut' },
+        { label: 'Ako nám môžeš pomôcť?', href: '/akopomoct' },
         { label: 'Kontakt', href: '/kontakt' }
       ]
     },
     { label: 'KONTAKTY', href: '/kontakt' }, // Bez dropdown menu
-    { label: 'TÝŽDENNÝ MIKROCYKLUS', href: '/tyzdennik' }, // Bez dropdown menu
+    { label: 'TÝŽDENNÝ MIKROCYKLUS', href: '/tyzdennymikrocyklus' }, // Bez dropdown menu
   ];
 
   return (
@@ -87,9 +87,9 @@ export function Header() {
             </div>
             {/* Pravá strana - oznámenie (skryté na mobile) */}
             <div className="hidden md:flex items-center space-x-4">
-              <a href="#" className="hover:text-[#D4B88E] transition-colors">
+              <p className="hover:text-[#D4B88E] transition-colors">
                 FUTBAL JE HRA A HRAŤ BY SA MAL ČLOVEK PRE RADOSŤ
-              </a>
+              </p>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ export function Header() {
       <nav className="bg-[#003474] text-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            
+
             {/* Logo a názov klubu */}
             <div className="flex items-center space-x-8">
               <Link to="/" className="flex items-center space-x-3">
@@ -126,9 +126,8 @@ export function Header() {
                   {item.href ? (
                     <Link
                       to={item.href}
-                      className={`flex items-center px-3 py-2 text-sm font-medium hover:bg-blue-700 rounded transition-colors ${
-                        location.pathname === item.href ? 'bg-blue-700' : '' // Zvýrazní aktívnu stránku
-                      }`}
+                      className={`flex items-center px-3 py-2 text-sm font-medium hover:bg-blue-700 rounded transition-colors ${location.pathname === item.href ? 'bg-blue-700' : '' // Zvýrazní aktívnu stránku
+                        }`}
                     >
                       {item.label}
                       {/* Šípka dolu, ak má dropdown */}
@@ -143,7 +142,7 @@ export function Header() {
                       {item.dropdown && <ChevronDown className="ml-1 w-4 h-4" />}
                     </div>
                   )}
-                  
+
                   {/* Dropdown menu - zobrazí sa len ak je activeDropdown nastavené na túto položku */}
                   {item.dropdown && activeDropdown === item.label && (
                     <div className="absolute top-full left-0 pt-1">
@@ -167,14 +166,14 @@ export function Header() {
             {/* Pravá strana - vyhľadávanie, hamburger menu, logo partnera */}
             <div className="flex items-center space-x-4">
               {/* Ikona konta - odkaz na Admin Panel */}
-              <Link 
+              <Link
                 to="/admin"
                 className="p-2 hover:bg-blue-700 rounded-full transition-colors"
                 title="Admin Panel"
               >
                 <User className="w-5 h-5" />
               </Link>
-              
+
               {/* Hamburger menu tlačidlo - zobrazuje sa len na mobiloch */}
               <button
                 className="lg:hidden p-2 hover:bg-blue-700 rounded-full transition-colors"
@@ -204,9 +203,8 @@ export function Header() {
                   {item.href ? (
                     <Link
                       to={item.href}
-                      className={`block py-2 text-xl font-bold transition-colors ${
-                        location.pathname === item.href ? 'text-[#B7975E]' : 'text-white'
-                      }`}
+                      className={`block py-2 text-xl font-bold transition-colors ${location.pathname === item.href ? 'text-[#B7975E]' : 'text-white'
+                        }`}
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.label}
@@ -236,7 +234,7 @@ export function Header() {
                   )}
                 </div>
               ))}
-              
+
               {/* Odkaz na admin panel v mobilnom menu */}
               <Link
                 to="/admin"

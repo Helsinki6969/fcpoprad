@@ -43,7 +43,7 @@ import {
 import { Plus, Pencil, Trash2, Search, Lock, Video as VideoIcon, Eye, User } from 'lucide-react';
 import { toast } from 'sonner';
 
-export function Sprava() {
+export function Admin() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

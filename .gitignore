@@ -1,7 +1,8 @@
 # Dependencies
 node_modules/
 dist/
-build/
+# build/ (Allowed for direct deployment due to low server RAM)
+# build/
 .DS_Store
 
 # Environment variables
