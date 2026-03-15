@@ -42,11 +42,11 @@ import {
 } from '../components/ui/alert-dialog';
 import { Plus, Pencil, Trash2, Search, Lock, Video as VideoIcon, Eye, User, Target, Trophy, Users, Calendar } from 'lucide-react';
 import { toast } from 'sonner';
-import { 
-  getAllPlayers, 
-  createPlayer, 
-  updatePlayer, 
-  deletePlayer as deletePlayerService 
+import {
+  getAllPlayers,
+  createPlayer,
+  updatePlayer,
+  deletePlayer as deletePlayerService
 } from '../services/playerService';
 
 export function Admin() {
@@ -78,13 +78,13 @@ export function Admin() {
       if (session) {
         setIsAuthenticated(true);
         setCurrentUser({
-            id: session.user.id,
-            username: session.user.email?.split('@')[0] || 'admin',
-            email: session.user.email || '',
-            role: 'root',
-            createdAt: session.user.created_at,
-            lastLogin: session.user.last_sign_in_at || new Date().toISOString(),
-            isActive: true
+          id: session.user.id,
+          username: session.user.email?.split('@')[0] || 'admin',
+          email: session.user.email || '',
+          role: 'root',
+          createdAt: session.user.created_at,
+          lastLogin: session.user.last_sign_in_at || new Date().toISOString(),
+          isActive: true
         });
         loadArticles();
         loadVideos();
@@ -94,15 +94,15 @@ export function Admin() {
 
     // Počúvať na zmeny prihlásenia
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-        if (session) {
-            setIsAuthenticated(true);
-            loadArticles();
-            loadVideos();
-            loadPlayers();
-        } else {
-            setIsAuthenticated(false);
-            setCurrentUser(null);
-        }
+      if (session) {
+        setIsAuthenticated(true);
+        loadArticles();
+        loadVideos();
+        loadPlayers();
+      } else {
+        setIsAuthenticated(false);
+        setCurrentUser(null);
+      }
     });
 
     return () => subscription.unsubscribe();
@@ -111,7 +111,7 @@ export function Admin() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    
+
     try {
       // Odošle zadaný email a heslo priamo do modulu Supabase Authentication.
       // Ak sú údaje správne, vráti objekt 'data' s informáciami o užívateľovi a systém ho pustí dnu.
@@ -123,7 +123,7 @@ export function Admin() {
       if (error) {
         throw error;
       }
-      
+
       const user: AdminUser = {
         id: data.user.id,
         username: data.user.email?.split('@')[0] || 'admin',
@@ -133,7 +133,7 @@ export function Admin() {
         lastLogin: data.user.last_sign_in_at || new Date().toISOString(),
         isActive: true
       };
-      
+
       setIsAuthenticated(true);
       setCurrentUser(user);
       loadArticles();
@@ -141,7 +141,7 @@ export function Admin() {
       loadPlayers();
       toast.success('Prihlásenie úspešné');
     } catch (error: any) {
-        toast.error('Zlé prihlasovacie údaje alebo chyba siete: ' + error.message);
+      toast.error('Zlé prihlasovacie údaje alebo chyba siete: ' + error.message);
     } finally {
       setLoading(false);
     }
@@ -281,7 +281,7 @@ export function Admin() {
 
   const handleDelete = async () => {
     if (!itemToDelete) return;
-    
+
     setLoading(true);
     try {
       if (itemToDelete.type === 'article') {
@@ -439,9 +439,9 @@ export function Admin() {
             <h1 className="text-3xl font-bold">Admin Panel</h1>
             <p className="text-blue-200 mt-1">Správa obsahu FC Poprad</p>
           </div>
-          <Button 
-            variant="outline" 
-            onClick={handleLogout} 
+          <Button
+            variant="outline"
+            onClick={handleLogout}
             className="bg-transparent text-white border-white hover:bg-white hover:text-[#003474] transition-colors"
           >
             Odhlásiť sa
