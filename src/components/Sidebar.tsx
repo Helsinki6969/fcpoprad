@@ -19,7 +19,7 @@ export function Sidebar() {
         console.error("Chyba pri načítaní videí v Sidebar:", error);
       }
     };
-    
+
     fetchVideos();
   }, []);
 
@@ -35,9 +35,9 @@ export function Sidebar() {
         </div>
         <div className="p-6 space-y-4">
           {latestVideos.map((video) => (
-            <Link 
-              key={video.id} 
-              to="/klubova-tv" 
+            <Link
+              key={video.id}
+              to="/klubova-tv"
               className="group cursor-pointer block"
             >
               <div className="relative rounded-lg overflow-hidden mb-2">
@@ -66,10 +66,10 @@ export function Sidebar() {
               <p className="text-sm text-gray-500 mt-1">{video.date}</p>
             </Link>
           ))}
-          
+
           {/* Link na všetky videá */}
-          <Link 
-            to="/klubova-tv" 
+          <Link
+            to="/klubova-tv"
             className="block text-center py-2 px-4 bg-[#003474] text-white rounded-lg font-medium hover:bg-blue-700 transition-colors mt-4"
           >
             Všetky videá
@@ -105,7 +105,7 @@ export function Sidebar() {
           <Link to="/hymna" className="block py-2 px-4 bg-white/90 rounded-lg font-medium hover:bg-white transition-colors text-[#003474]">
             Klubová hymna
           </Link>
-          <Link to="/strate" className="block py-2 px-4 bg-white/90 rounded-lg font-medium hover:bg-white transition-colors text-[#003474]">
+          <Link to="/straze" className="block py-2 px-4 bg-white/90 rounded-lg font-medium hover:bg-white transition-colors text-[#003474]">
             Stráže pod Tatrami
           </Link>
         </div>

@@ -28,7 +28,7 @@ export function Footer() {
             {/* Social Media Icons */}
             <div className="flex space-x-3 mt-4">
               <a
-                href="https://www.facebook.com/fcpopradstraze"
+                href="https://www.facebook.com/fkpopradstraze"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-700 hover:bg-[#B7975E] rounded-full flex items-center justify-center transition-colors"
@@ -53,7 +53,7 @@ export function Footer() {
                 <Phone className="w-5 h-5" />
               </a>
               <a
-                href="mailto:fcpopradstraze@gmail.com"
+                href="mailto:info@fcpoprad.info"
                 className="w-10 h-10 bg-blue-700 hover:bg-[#B7975E] rounded-full flex items-center justify-center transition-colors"
                 aria-label="Email"
               >
@@ -77,27 +77,27 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/klubova-hymna" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                <Link to="/hymna" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
                   Klubová hymna
                 </Link>
               </li>
               <li>
-                <Link to="/tyzdennik" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                <Link to="/tyzdennymikrocyklus" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
                   Týždenný mikrocyklus
                 </Link>
               </li>
               <li>
-                <Link to="/osoby" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                <Link to="/cinovniciatreneri" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
                   Činovníci a tréneri
                 </Link>
               </li>
               <li>
-                <Link to="/misia" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                <Link to="/poslanie" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
                   Poslanie
                 </Link>
               </li>
               <li>
-                <Link to="/vylepsenie" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                <Link to="/akosazlepsujeme" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
                   Ako sa zlepšujeme
                 </Link>
               </li>
@@ -119,17 +119,17 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/osoby" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                <Link to="/cinovniciatreneri" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
                   Činovníci a tréneri
                 </Link>
               </li>
               <li>
-                <Link to="/misia" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                <Link to="/poslanie" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
                   Poslanie
                 </Link>
               </li>
               <li>
-                <Link to="/vylepsenie" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                <Link to="/akosazlepsujeme" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
                   Ako sa zlepšujeme
                 </Link>
               </li>
@@ -156,8 +156,8 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[#B7975E] flex-shrink-0" />
-                <a href="mailto:fcpopradstraze@gmail.com" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
-                  fcpopradstraze@gmail.com
+                <a href="mailto:info@fcpoprad.info" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                  info@fcpoprad.info
                 </a>
               </li>
             </ul>
@@ -182,8 +182,8 @@ export function Footer() {
               <a href="#" className="text-blue-200 hover:text-[#B7975E] transition-colors">
                 GDPR
               </a>
-              <Link 
-                to="/admin" 
+              <Link
+                to="/admin"
                 className="text-blue-200 hover:text-[#B7975E] transition-colors inline-flex items-center gap-1"
               >
                 <Lock className="w-3 h-3" />
@@ -191,7 +191,7 @@ export function Footer() {
               </Link>
             </div>
           </div>
-          
+
           {/* Partner Logos Section */}
           <div className="mt-8 pt-6 border-t border-blue-700">
             <div className="text-center text-blue-200 text-sm mb-4">Partneri klubu</div>

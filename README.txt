@@ -1,55 +1,52 @@
 ================================================================================
-          FC POPRAD - STRÁŽE | WEBOVÁ STRÁNKA | NÁVOD NA SPUSTENIE
+          FC POPRAD - STRÁŽE | MATURITNÝ PROJEKT | NÁVOD NA SPUSTENIE
 ================================================================================
+
+Tento dokument obsahuje kompletný postup na stiahnutie, inštaláciu a spustenie 
+zdrojových kódov webovej aplikácie.
+
 --------------------------------------------------------------------------------
 1. POŽIADAVKY NA SYSTÉM
 --------------------------------------------------------------------------------
-Pred spustením treba mať nainštalované:
+Pred spustením sa uistite, že máte nainštalované:
 - Node.js (verzia 20.x alebo novšia)
-  Stiahnúť tu: https://nodejs.org/
+  Stiahnuť tu: https://nodejs.org/
+
 --------------------------------------------------------------------------------
 2. POSTUP SPUSTENIA (KROK ZA KROKOM)
 --------------------------------------------------------------------------------
 1. STIAHNUTIE/ROZBALENIE:
-   - Presuňte priečinok "fcpoprad" na ľubovoľné miesto v PC.
-2. PRÍKAZOVÝ RIADOK:
-   - Otvorte Príkazový riadok (cmd) alebo PowerShell.
-   - Presuňte sa do priečinka projektu:
-     cd "cesta/k/vasmu/priečinku/fcpoprad"
+- Rozbaľte doručený archív so zdrojovými kódmi do ľubovoľného priečinka.
+
+2. OTVORENIE TERMINÁLU:
+- Otvorte Príkazový riadok (cmd) alebo PowerShell.
+- Presuňte sa do priečinka projektu:
+  cd "cesta/k/vasmu/priečinku/fcpoprad"
 
 3. INŠTALÁCIA KNIŽNÍC (node_modules):
    - Spustite príkaz: 
      npm install
    - Systém automaticky stiahne všetky závislosti zo súboru package.json.
    - POZNÁMKA: Priečinok 'node_modules' nie je súčasťou archívu kvôli veľkosti.
-     Objaví sa po spustení príkazu: npm install
 
 4. SPUSTENIE APLIKÁCIE:
-   - Spustite príkazy:
-     npm run build
-   - Počkajte na hlásenie, že server beží (zvyčajne na porte 3000):
-     -----------------------------------
-     VITE v6.3.5  ready in xxx ms
+   - Spustite príkaz:
+     npm run dev
+   - Počkajte na hlásenie, že server beží (zvyčajne na porte 5173).
 
-     ➜  Local:   http://localhost:3000/   <  túto URL zadajte do prehliadača
-     -----------------------------------
+5. ZOBRAZENIE V PREHLIADAČI:
+   - Otvorte prehliadač a zadajte adresu:
+     http://localhost:5173
+
 --------------------------------------------------------------------------------
 3. PRÍSTUPOVÉ ÚDAJE (ADMIN PANEL)
 --------------------------------------------------------------------------------
 Pre testovanie funkcií správy (pridávanie článkov, videí, hráčov) použite:
 
-Odkaz: http://localhost:3000/admin
+Odkaz: http://localhost:5173/admin
 E-mail: komisia@fcpoprad.info
 Heslo: Maturita2026@
---------------------------------------------------------------------------------
-4. PRÍSTUPOVÉ ÚDAJE (MAIL)
---------------------------------------------------------------------------------
-Pre test kontaktného formulára, resp.
-prečítanie správy odoslanej z formulára, použite:
 
-Odkaz: https://mail.fcpoprad.info/mail
-E-mail: komisia@fcpoprad.info
-Heslo: Maturita2026@
 --------------------------------------------------------------------------------
 4. TECHNICKÁ ŠPECIFIKÁCIA
 --------------------------------------------------------------------------------
@@ -58,6 +55,9 @@ Heslo: Maturita2026@
 - Databáza a Backend: Supabase (Cloudové riešenie)
 - Styling: Tailwind CSS (Utility-first framework)
 - Ikony: Lucide React
-- Web server: nginx
-- Hostovanie (VPS): Hetzner
+- Hostovanie (VPS): Nginx (akonáhle je web vybuildovaný cez npm run build)
+
+--------------------------------------------------------------------------------
+Tento projekt bol vyvinutý s dôrazom na moderné webové štandardy, mobilnú 
+responzivitu a cloudovú správu dát.
 ================================================================================
