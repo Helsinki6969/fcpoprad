@@ -28,14 +28,18 @@ export function Footer() {
             {/* Social Media Icons */}
             <div className="flex space-x-3 mt-4">
               <a
-                href="#"
+                href="https://www.facebook.com/fcpopradstraze"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-700 hover:bg-[#B7975E] rounded-full flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/fcppstraze/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-blue-700 hover:bg-[#B7975E] rounded-full flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
@@ -78,18 +82,23 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/historia" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
-                  História
-                </Link>
-              </li>
-              <li>
-                <Link to="/partneri" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
-                  Partneri
-                </Link>
-              </li>
-              <li>
                 <Link to="/tyzdennik" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
                   Týždenný mikrocyklus
+                </Link>
+              </li>
+              <li>
+                <Link to="/osoby" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                  Činovníci a tréneri
+                </Link>
+              </li>
+              <li>
+                <Link to="/misia" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                  Poslanie
+                </Link>
+              </li>
+              <li>
+                <Link to="/vylepsenie" className="text-blue-200 hover:text-[#B7975E] transition-colors text-sm">
+                  Ako sa zlepšujeme
                 </Link>
               </li>
             </ul>

@@ -307,6 +307,45 @@ export const articles: Article[] = [
 
       <p>Slávnostné otvorenie zrekonštruovaného štadióna sa plánuje na 28. marca 2026 pred prvým jarným zápasom. Tešíme sa na vás v novom!</p>
     `
+  },
+  {
+    id: 7,
+    slug: 'brankarsky-trening-dorastencov',
+    title: 'BRANKÁRSKY TRÉNING DORASTENCOV',
+    date: '10.03.2026',
+    category: 'Mládež',
+    image: 'https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?w=1200&h=600&fit=crop',
+    excerpt: 'Intenzívny tréning našich nádejných brankárov pod vedením špecializovaných trénerov.',
+    author: 'Jozef Brankár',
+    authorId: 3,
+    authorImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
+    readTime: 4,
+    tags: ['Brankári', 'Tréning', 'Mládež'],
+    content: `
+      <p>Kvalitný brankár je základom úspešného tímu. V FC Poprad si to uvedomujeme, a preto kladieme veľký dôraz na špecializovanú prípravu našich gólmanov už v mládežníckych kategóriách.</p>
+
+      <p>Počas uplynulého týždňa absolvovali naši dorasteneckí brankári sériu intenzívnych tréningových jednotiek zameraných na postreh, koordináciu a prácu s priestorom.</p>
+
+      <h3>Zameranie tréningu</h3>
+      <p>Tréningový proces bol rozdelený do viacerých fáz:</p>
+      <ul>
+        <li><strong>Rozcvička:</strong> Aktivácia reflexov a dynamický strečing.</li>
+        <li><strong>Technika chytania:</strong> Správne postavenie rúk a tela pri rôznych typoch striel.</li>
+        <li><strong>Výpady a pády:</strong> Zvládnutie techniky bezpečného dopadu a rýchleho návratu do postoja.</li>
+        <li><strong>Hra nohou:</strong> Moderný brankár musí byť "tretím stopérom", preto sme sa zamerali aj na rozohrávku.</li>
+      </ul>
+
+      <p>Tu je niekoľko záberov priamo z tréningovej plochy:</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+        <img src="https://images.unsplash.com/photo-1628891890377-5711309f7364?w=800&fit=crop" alt="Brankár v akcii" class="rounded-lg shadow-md" />
+        <img src="https://images.unsplash.com/photo-1559136655-eac373ef5e68?w=800&fit=crop" alt="Tréning postrehu" class="rounded-lg shadow-md" />
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&fit=crop" alt="Analýza pohybu" class="rounded-lg shadow-md" />
+        <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&fit=crop" alt="Tímová príprava" class="rounded-lg shadow-md" />
+      </div>
+
+      <p>Tréneri ocenili nasadenie a chuť chlapcov sa zlepšovať. Veríme, že tieto zručnosti čoskoro zúročia v dôležitých majstrovských zápasoch.</p>
+    `
   }
 ];
 
