@@ -28,7 +28,6 @@ export function VideoForm({ video, onSubmit, onCancel }: VideoFormProps) {
     tags: video?.tags || [] as string[]
   });
 
-  const [tagInput, setTagInput] = useState('');
 
   // Automaticky extrahuje YouTube ID z URL
   const extractYoutubeId = (url: string) => {
@@ -71,11 +70,16 @@ export function VideoForm({ video, onSubmit, onCancel }: VideoFormProps) {
     onSubmit(submitData);
   };
 
-  const addTag = () => {
-    if (tagInput.trim() && !formData.tags.includes(tagInput.trim())) {
-      setFormData(prev => ({ ...prev, tags: [...prev.tags, tagInput.trim()] }));
-      setTagInput('');
-    }
+
+  const toggleTag = (tag: string) => {
+    setFormData(prev => {
+      const isSelected = prev.tags.includes(tag);
+      if (isSelected) {
+        return { ...prev, tags: prev.tags.filter(t => t !== tag) };
+      } else {
+        return { ...prev, tags: [...prev.tags, tag] };
+      }
+    });
   };
 
   const handleRemoveTag = (tag: string) => {
@@ -83,6 +87,7 @@ export function VideoForm({ video, onSubmit, onCancel }: VideoFormProps) {
   };
 
   const categories = ['Zápasy', 'Tréningy', 'Rozhovory', 'Góly', 'Mládež', 'Ostatné'];
+  const tagCategories = ['Novinky', 'Klubová TV', 'A Tím', 'U19', 'U17', 'U15', 'U13'];
 
   // Aktuálny thumbnail (buď vlastný alebo z YouTube)
   const currentThumbnail = formData.thumbnail || getYoutubeThumbnail(formData.youtubeId);
@@ -181,18 +186,31 @@ export function VideoForm({ video, onSubmit, onCancel }: VideoFormProps) {
           />
 
           {/* Tags */}
-          <div className="space-y-2">
-            <Label htmlFor="tags">Tagy (tie isté ako pri článkoch)</Label>
-            <div className="flex gap-2">
-              <Input
-                id="tags"
-                value={tagInput}
-                onChange={(e) => setTagInput(e.target.value)}
-                onKeyPress={(e) => e.key === 'Enter' && (e.preventDefault(), addTag())}
-                placeholder="Zadajte tag a stlačte Enter"
-              />
-              <Button type="button" onClick={addTag} className="bg-[#003474]">Pridať</Button>
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <Label>Tagy (kategórie)</Label>
+              <div className="flex flex-wrap gap-2 p-3 bg-gray-50 rounded-lg border border-gray-100">
+                {tagCategories.map(tag => {
+                  const isSelected = formData.tags.includes(tag);
+                  return (
+                    <button
+                      key={tag}
+                      type="button"
+                      onClick={() => toggleTag(tag)}
+                      className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+                        isSelected 
+                          ? 'bg-[#003474] text-white' 
+                          : 'bg-white text-gray-600 border border-gray-200 hover:border-[#003474] hover:text-[#003474]'
+                      }`}
+                    >
+                      {tag}
+                    </button>
+                  );
+                })}
+              </div>
+              <p className="text-xs text-gray-500">Vyberte jednu alebo viac kategórií kliknutím.</p>
             </div>
+
             <div className="flex flex-wrap gap-2 mt-2">
               {formData.tags.map(tag => (
                 <span
