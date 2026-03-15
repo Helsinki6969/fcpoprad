@@ -607,14 +607,22 @@ export function Admin() {
                     <Card key={video.id}>
                       <CardContent className="p-6">
                         <div className="flex flex-col md:flex-row gap-4">
-                          <div className="w-full md:w-48 h-32 flex-shrink-0 relative">
-                            <img
-                              src={video.thumbnail || 'https://via.placeholder.com/320x180'}
-                              alt={video.title}
-                              className="w-full h-full object-cover rounded"
-                            />
-                            <div className="absolute inset-0 flex items-center justify-center bg-black/30 rounded">
-                              <VideoIcon className="w-8 h-8 text-white" />
+                          <div className="w-full md:w-48 h-32 flex-shrink-0 relative bg-gray-200 rounded overflow-hidden">
+                            {video.thumbnail ? (
+                              <img
+                                src={video.thumbnail}
+                                alt={video.title}
+                                className="w-full h-full object-cover"
+                              />
+                            ) : (
+                              <div className="w-full h-full flex items-center justify-center bg-gray-100 text-gray-400">
+                                <VideoIcon className="w-8 h-8" />
+                              </div>
+                            )}
+                            <div className="absolute inset-0 flex items-center justify-center bg-black/10">
+                              <div className="bg-white/90 rounded-full p-2">
+                                <VideoIcon className="w-6 h-6 text-[#003474]" />
+                              </div>
                             </div>
                           </div>
 
@@ -737,9 +745,13 @@ export function Admin() {
                                     <Target className="w-4 h-4" />
                                     {player.goals} gólov
                                   </span>
-                                  <span className="flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 text-[#B7975E] rounded-full font-medium border border-amber-100">
-                                    <Trophy className="w-4 h-4" />
-                                    {player.assists} asistencií
+                                  <span className="flex items-center gap-1.5 px-3 py-1.5 bg-yellow-50 text-yellow-700 rounded-full font-medium border border-yellow-200">
+                                    <div className="w-3 h-4 rounded-sm border border-yellow-600/30 shadow-sm" style={{ backgroundColor: '#fbbf24' }} title="Žltá karta" />
+                                    {player.yellowCards} ŽK
+                                  </span>
+                                  <span className="flex items-center gap-1.5 px-3 py-1.5 bg-red-50 text-red-700 rounded-full font-medium border border-red-200">
+                                    <div className="w-3 h-4 rounded-sm border border-red-700/30 shadow-sm" style={{ backgroundColor: '#ef4444' }} title="Červená karta" />
+                                    {player.redCards} ČK
                                   </span>
                                   <span className="flex items-center gap-1.5 px-3 py-1.5 bg-gray-50 text-gray-700 rounded-full font-medium border border-gray-200">
                                     <Users className="w-4 h-4" />

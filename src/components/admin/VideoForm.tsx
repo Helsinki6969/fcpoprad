@@ -220,7 +220,7 @@ export function VideoForm({ video, onSubmit, onCancel }: VideoFormProps) {
                 alt="YouTube náhľad"
                 className="w-full max-w-md h-48 object-cover rounded-lg mt-2 border border-gray-200"
                 onError={(e) => {
-                  e.currentTarget.src = 'https://via.placeholder.com/800x600?text=Neplatná+URL';
+                  e.currentTarget.style.display = 'none';
                 }}
               />
             </div>

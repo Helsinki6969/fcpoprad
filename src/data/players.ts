@@ -15,7 +15,7 @@ export interface Player {
   // Štatistiky
   matchesPlayed: number;
   goals: number;
-  assists: number;
+  assists?: number;
   yellowCards: number;
   redCards: number;
   isActive: boolean;

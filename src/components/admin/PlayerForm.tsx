@@ -6,11 +6,10 @@ import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { Player } from '../../data/players';
-import { ImageUpload } from './ImageUpload';
 
 interface PlayerFormProps {
   player?: Player;
-  onSubmit: (playerData: Omit<Player, 'id' | 'age' | 'isActive'>) => void;
+  onSubmit: (playerData: Omit<Player, 'id' | 'age' | 'isActive' | 'assists'>) => void;
   onCancel: () => void;
 }
 
@@ -28,7 +27,6 @@ export function PlayerForm({ player, onSubmit, onCancel }: PlayerFormProps) {
     bio: player?.bio || '',
     matchesPlayed: player?.matchesPlayed || 0,
     goals: player?.goals || 0,
-    assists: player?.assists || 0,
     yellowCards: player?.yellowCards || 0,
     redCards: player?.redCards || 0
   });
@@ -210,17 +208,6 @@ export function PlayerForm({ player, onSubmit, onCancel }: PlayerFormProps) {
                   min="0"
                   value={formData.goals}
                   onChange={(e) => setFormData({ ...formData, goals: parseInt(e.target.value) || 0 })}
-                />
-              </div>
-
-              <div>
-                <Label htmlFor="assists">Asistencie</Label>
-                <Input
-                  id="assists"
-                  type="number"
-                  min="0"
-                  value={formData.assists}
-                  onChange={(e) => setFormData({ ...formData, assists: parseInt(e.target.value) || 0 })}
                 />
               </div>
 

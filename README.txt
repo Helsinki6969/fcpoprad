@@ -11,8 +11,8 @@ Pred spustením treba mať nainštalované:
 2. POSTUP SPUSTENIA (KROK ZA KROKOM)
 --------------------------------------------------------------------------------
 1. STIAHNUTIE/ROZBALENIE:
-   - Rozbaľte doručený archív so zdrojovými kódmi do ľubovoľného priečinka.
-2. OTVORENIE TERMINÁLU:
+   - Presuňte priečinok "fcpoprad" na ľubovoľné miesto v PC.
+2. PRÍKAZOVÝ RIADOK:
    - Otvorte Príkazový riadok (cmd) alebo PowerShell.
    - Presuňte sa do priečinka projektu:
      cd "cesta/k/vasmu/priečinku/fcpoprad"

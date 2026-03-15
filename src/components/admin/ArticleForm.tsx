@@ -28,7 +28,7 @@ export function ArticleForm({ article, onSubmit, onCancel }: ArticleFormProps) {
     excerpt: '',
     author: admins[0]?.fullName || 'FC Poprad', // Default autor
     authorId: admins[0]?.id, // Default author ID
-    authorImage: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
+    authorImage: '',
     content: '',
     tags: [],
     readTime: 5
@@ -47,7 +47,7 @@ export function ArticleForm({ article, onSubmit, onCancel }: ArticleFormProps) {
         excerpt: article.excerpt,
         author: article.author,
         authorId: article.authorId,
-        authorImage: article.authorImage || 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
+        authorImage: article.authorImage || '',
         content: article.content,
         tags: article.tags,
         readTime: article.readTime

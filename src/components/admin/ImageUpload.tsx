@@ -128,7 +128,7 @@ export function ImageUpload({
             alt="Preview"
             className="w-full max-w-md h-48 object-cover rounded"
             onError={(e) => {
-              e.currentTarget.src = 'https://via.placeholder.com/800x600?text=Chyba+načítania';
+              e.currentTarget.style.display = 'none';
             }}
           />
           <Button
